@@ -1,0 +1,145 @@
+Country;Locality;Site;File;Observer
+Venezuela;Cubagua;Punta Conejo;conejo_t1;KR
+Venezuela;Cubagua;Punta Conejo;conejo_t2;LMM
+Venezuela;Cubagua;Punta Conejo;conejo_t3;EM
+Venezuela;Cubagua;Punta Conejo;conejo_t4;EM
+Venezuela;Cubagua;Charagato;charagato_t1;LMM
+Venezuela;Cubagua;Charagato;charagato_t2;EM
+Venezuela;Cubagua;Charagato;charagato_t3;AA
+Venezuela;Cubagua;Charagato;charagato_t4;AR
+Venezuela;Cubagua;La Muerta;muerta_t1;LMM
+Venezuela;Cubagua;La Muerta;muerta_t2;AA
+Venezuela;Cubagua;La Muerta;muerta_t3;EM
+Venezuela;Cubagua;La Muerta;muerta_t4;EM
+Venezuela;Los Frailes;Cominoto;cominoto_t1;LMM
+Venezuela;Los Frailes;Cominoto;cominoto_t2;AA
+Venezuela;Los Frailes;Cominoto;cominoto_t3;EM
+Venezuela;Los Frailes;Cominoto;cominoto_t4;AA
+Venezuela;Los Frailes;La Pecha;pecha_t1;LMM
+Venezuela;Los Frailes;La Pecha;pecha_t2;AR
+Venezuela;Los Frailes;La Pecha;pecha_t3;AA
+Venezuela;Los Frailes;La Pecha;pecha_t4;EM
+Venezuela;Los Frailes;Puerto Real;real_t1;LMM
+Venezuela;Los Frailes;Puerto Real;real_t2;AR
+Venezuela;Los Frailes;Puerto Real;real_t3;AR
+Venezuela;Los Frailes;Puerto Real;real_t4;EM
+Venezuela;Morrocoy;Bajo Caiman;caiman_t1;GM
+Venezuela;Morrocoy;Bajo Caiman;caiman_t2;GM
+Venezuela;Morrocoy;Bajo Caiman;caiman_t3;LMM
+Venezuela;Morrocoy;Bajo Caiman;caiman_t4;ZRS
+Venezuela;Morrocoy;Mero;mero_t1;LMM
+Venezuela;Morrocoy;Mero;mero_t2;EM
+Venezuela;Morrocoy;Mero;mero_t3;AA
+Venezuela;Morrocoy;Mero;mero_t4;ZRS
+Venezuela;Morrocoy;Norte;norte_t1;Calibraci?n
+Venezuela;Morrocoy;Norte;norte_t2;EM
+Venezuela;Morrocoy;Norte;norte_t3;LMM
+Venezuela;Morrocoy;Norte;norte_t4;ZM
+Venezuela;Morrocoy;Medio;medio_t1;Calibraci?n
+Venezuela;Morrocoy;Medio;medio_t2;LMM
+Venezuela;Morrocoy;Medio;medio_t3;EM
+Venezuela;Morrocoy;Medio;medio_t4;LMM, EM
+Venezuela;Morrocoy;Sur;sur_t1;EM
+Venezuela;Morrocoy;Sur;sur_t2;LMM
+Venezuela;Morrocoy;Sur;sur_t3;EM
+Venezuela;Morrocoy;Sur;sur_t4;LMM
+Venezuela;Morrocoy;Sombrero;sombrero_t1;Calibraci?n
+Venezuela;Morrocoy;Sombrero;sombrero_t2;EM
+Venezuela;Morrocoy;Sombrero;sombrero_t3;ZM
+Venezuela;Morrocoy;Sombrero;sombrero_t4;LMM
+Venezuela;Morrocoy;Boca Seca;bs_t1;EM
+Venezuela;Morrocoy;Boca Seca;bs_t2;LMM
+Venezuela;Morrocoy;Boca Seca;bs_t3;LMM
+Venezuela;Morrocoy;Boca Seca;bs_t4;EM
+Venezuela;Mochima;Carabela;carabela_t1;LMM, EM
+Venezuela;Mochima;Carabela;carabela_t2;LMM, EM
+Venezuela;Mochima;Carabela;carabela_t3;EM, LMM
+Venezuela;Mochima;Carabela;carabela_t4;LMM, EM
+Venezuela;Mochima;Punta Cruz;cruz_t1;EM, LMM, ZM
+Venezuela;Mochima;Punta Cruz;cruz_t2;GM, LMM, EM, ZM
+Venezuela;Mochima;Punta Cruz;cruz_t3;LMM, EM, ZM
+Venezuela;Mochima;Punta Cruz;cruz_t4;AR, LM, GM, EM, ZM
+Venezuela;Mochima;San Agustin;agustin_t1;EM, LMM, ZM
+Venezuela;Mochima;San Agustin;agustin_t2;LMM, EM, AR, ZM
+Venezuela;Mochima;San Agustin;agustin_t3;EM, LMM, ZM, AR
+Venezuela;Mochima;San Agustin;agustin_t4;EM, LMM, ZM
+Venezuela;Mochima;Blanca;blanca_t1;LMM, EM, AR, ZM
+Venezuela;Mochima;Blanca;blanca_t2;EM, LMM, ZM, ZR
+Venezuela;Mochima;Blanca;blanca_t3;LMM, AR, EM, ZM
+Venezuela;Mochima;Blanca;blanca_t4;LMM, EM, ZM
+Venezuela;Mochima;Gabarra;gabarra_t1;AR, EM, ZM, LMM
+Venezuela;Mochima;Gabarra;gabarra_t2;LMM, EM, ZM
+Venezuela;Mochima;Gabarra;gabarra_t3;LMM, EM, AR, ZM
+Venezuela;Mochima;Gabarra;gabarra_t4;LMM, EM, ZM
+Venezuela;Mochima;Garrapata;garrapata_t1;EM, AR, ZM, LMM
+Venezuela;Mochima;Garrapata;garrapata_t2;EM
+Venezuela;Mochima;Garrapata;garrapata_t3;EM
+Venezuela;Mochima;Garrapata;garrapata_t4;EM, LMM
+Venezuela;Los Roques;Cayo Agua;agua_t1;EM
+Venezuela;Los Roques;Cayo Agua;agua_t2;LMM
+Venezuela;Los Roques;Cayo Agua;agua_t3;AA
+Venezuela;Los Roques;Cayo Agua;agua_t4;ZR
+Venezuela;Los Roques;Salinas;salinas_t1;LMM
+Venezuela;Los Roques;Salinas;salinas_t2;EM
+Venezuela;Los Roques;Salinas;salinas_t3;EM
+Venezuela;Los Roques;Salinas;salinas_t4;LMM
+Venezuela;Los Roques;Dos Mosquises Sur;dms_t1;ZR
+Venezuela;Los Roques;Dos Mosquises Sur;dms_t2;LMM
+Venezuela;Los Roques;Dos Mosquises Sur;dms_t3;AA
+Venezuela;Los Roques;Dos Mosquises Sur;dms_t4;KR
+Venezuela;Los Roques;Boca de Cote;cote_t1;LMM
+Venezuela;Los Roques;Boca de Cote;cote_t2;AA
+Venezuela;Los Roques;Boca de Cote;cote_t3;EM
+Venezuela;Los Roques;Boca de Cote;cote_t4;EM
+Venezuela;Los Roques;La Venada;venada_t1;LMM
+Venezuela;Los Roques;La Venada;venada_t2;AA
+Venezuela;Los Roques;La Venada;venada_t3;AR
+Venezuela;Los Roques;La Venada;venada_t4;EM
+Venezuela;Los Roques;Madrisqui;madrisqui_t1;LMM
+Venezuela;Los Roques;Madrisqui;madrisqui_t2;AR
+Venezuela;Los Roques;Madrisqui;madrisqui_t3;GMB
+Venezuela;Los Roques;Madrisqui;madrisqui_t4;EM
+Venezuela;Los Roques;Pelona de Rabusqui;rabusqui_t1;LMM
+Venezuela;Los Roques;Pelona de Rabusqui;rabusqui_t2;AR
+Venezuela;Los Roques;Pelona de Rabusqui;rabusqui_t3;AA
+Venezuela;Los Roques;Pelona de Rabusqui;rabusqui_t4;EM
+Venezuela;Chichiriviche;Petaquire;petaquire_t1;AR
+Venezuela;Chichiriviche;Petaquire;petaquire_t2;EM
+Venezuela;Chichiriviche;Petaquire;petaquire_t3;LMM
+Venezuela;Chichiriviche;Petaquire;petaquire_t4;
+Venezuela;Chichiriviche;Playa Tibur?n;playatiburon_t1;EM
+Venezuela;Chichiriviche;Playa Tibur?n;playatiburon_t2;AV
+Venezuela;Chichiriviche;Playa Tibur?n;playatiburon_t3;LMM
+Venezuela;Chichiriviche;Playa Tibur?n;playatiburon_t4;KR
+Venezuela;Chichiriviche;La Pared;lapared_t1;EM
+Venezuela;Chichiriviche;La Pared;lapared_t2;MAL
+Venezuela;Chichiriviche;La Pared;lapared_t3;KR
+Venezuela;Chichiriviche;La Pared;lapared_t4;KR
+Venezuela;Chichiriviche;Punta Mono;puntamono_t1;AA
+Venezuela;Chichiriviche;Punta Mono;puntamono_t2;EM
+Venezuela;Chichiriviche;Punta Mono;puntamono_t3;MAL
+Venezuela;Chichiriviche;Punta Mono;puntamono_t4;KR
+Venezuela;Chichiriviche;Media Legua;medialegua_t1;LMM
+Venezuela;Chichiriviche;Media Legua;medialegua_t2;AA
+Venezuela;Chichiriviche;Media Legua;medialegua_t3;GMB
+Venezuela;Chichiriviche;Media Legua;medialegua_t4;KR
+Venezuela;Chichiriviche;Punta de Media Legua;medialeguapunta_t1;LMM
+Venezuela;Chichiriviche;Punta de Media Legua;medialeguapunta_t2;EM
+Venezuela;Chichiriviche;Punta de Media Legua;medialeguapunta_t3;AR
+Venezuela;Chichiriviche;Punta de Media Legua;medialeguapunta_t4;KR
+Venezuela;Ocumare;Cienaga interno;cienaga interno_t1;KR
+Venezuela;Ocumare;Cienaga interno;cienaga interno_t2;LMM
+Venezuela;Ocumare;Cienaga interno;cienaga interno_t3;EM
+Venezuela;Ocumare;Cienaga interno;cienaga interno_t4;EM
+Venezuela;Ocumare;Cienaga este;cienaga este_t1;KR
+Venezuela;Ocumare;Cienaga este;cienaga este_t2;LMM
+Venezuela;Ocumare;Cienaga este;cienaga este_t3;EM
+Venezuela;Ocumare;Cienaga este;cienaga este_t4;EM
+Venezuela;Ocumare;Cienaga oeste;cienaga oeste_t1;LMM
+Venezuela;Ocumare;Cienaga oeste;cienaga oeste_t2;KR
+Venezuela;Ocumare;Cienaga oeste;cienaga oeste_t3;EM
+Venezuela;Ocumare;Cienaga oeste;cienaga oeste_t4;LMM
+Venezuela;Ocumare;Guabinitas;guabinitas_t1;LMM
+Venezuela;Ocumare;Guabinitas;guabinitas_t2;EM
+Venezuela;Ocumare;Guabinitas;guabinitas_t3;LMM
+Venezuela;Ocumare;Guabinitas;guabinitas_t4;KR

@@ -1,0 +1,308 @@
+Species name,Species ID,Group name,Group ID
+Acropora cervicornis,1,Scleractinian (branching),1
+Acropora palmata,2,Scleractinian (branching),1
+Acropora prolifera,3,Scleractinian (branching),1
+Acropora sp.,4,Scleractinian (branching),1
+Madracis carmabi,5,Scleractinian (branching),1
+Madracis formosa,6,Scleractinian (branching),1
+Madracis mirabilis,7,Scleractinian (branching),1
+Madracis sp.,8,Scleractinian (branching),1
+Oculina diffusa,9,Scleractinian (branching),1
+Porites divaricata,10,Scleractinian (branching),1
+Porites furcata,11,Scleractinian (branching),1
+Porites porites,12,Scleractinian (branching),1
+Porites sp.,13,Scleractinian (branching),1
+Other (Scleractinian branching),14,Scleractinian (branching),1
+Agaricia agaricites (purpurea),15,Scleractinian (plate),2
+Agaricia fragilis,16,Scleractinian (plate),2
+Agaricia grahamae,17,Scleractinian (plate),2
+Agaricia lamarcki,18,Scleractinian (plate),2
+Agaricia sp.,19,Scleractinian (plate),2
+Agaricia undata,20,Scleractinian (plate),2
+Dichocoenia stokesii,21,Scleractinian (plate),2
+Leptosteris cucullata,22,Scleractinian (plate),2
+Meandrina jacksoni,23,Scleractinian (plate),2
+Meandrina meandrites,24,Scleractinian (plate),2
+Mycetophyllia aliciae,25,Scleractinian (plate),2
+Mycetophyllia daniana,26,Scleractinian (plate),2
+Mycetophyllia ferox,27,Scleractinian (plate),2
+Mycetophyllia lamarckiana,28,Scleractinian (plate),2
+Mycetophyllia reesi,29,Scleractinian (plate),2
+Mycetophyllia sp.,30,Scleractinian (plate),2
+Porites astreoides,31,Scleractinian (plate),2
+Porites sp.,32,Scleractinian (plate),2
+Pseudodiploria clivosa,33,Scleractinian (plate),2
+Pseudodiploria strigosa,34,Scleractinian (plate),2
+Other (Scleractinian plate),35,Scleractinian (plate),2
+Agaricia agaricites (carinata),36,Scleractinian (foliose),3
+Agaricia agaricites (danai),37,Scleractinian (foliose),3
+Agaricia sp.,38,Scleractinian (foliose),3
+Agaricia tenuifolia,39,Scleractinian (foliose),3
+Other (Scleractinian foliose),40,Scleractinian (foliose),3
+Agaricia agaricites (agaricites),41,Scleractinian (massive),4
+Agaricia humilis,42,Scleractinian (massive),4
+Colpophyllia natans,43,Scleractinian (massive),4
+Dichocoenia stokesii,44,Scleractinian (massive),4
+Diploria labyrinthiformis,45,Scleractinian (massive),4
+Favia fragum,46,Scleractinian (massive),4
+Isophyllia rigida,47,Scleractinian (massive),4
+Isophyllia sinuosa,48,Scleractinian (massive),4
+Isophyllia sp.,49,Scleractinian (massive),4
+Madracis senaria,50,Scleractinian (massive),4
+Manicina aerolata,51,Scleractinian (massive),4
+Meandrina danae,52,Scleractinian (massive),4
+Meandrina jacksoni,53,Scleractinian (massive),4
+Meandrina meandrites,54,Scleractinian (massive),4
+Meandrina sp.,55,Scleractinian (massive),4
+Montastrea cavernosa,56,Scleractinian (massive),4
+Mycetophyllia lamarckiana,57,Scleractinian (massive),4
+Orbicella annularis,58,Scleractinian (massive),4
+Orbicella faveolata,59,Scleractinian (massive),4
+Orbicella franksi,60,Scleractinian (massive),4
+Orbicella sp.,61,Scleractinian (massive),4
+Porites astreoides,62,Scleractinian (massive),4
+Porites branneri,63,Scleractinian (massive),4
+Pseudodiploria clivosa,64,Scleractinian (massive),4
+Pseudodiploria strigosa,65,Scleractinian (massive),4
+Siderastrea radians,66,Scleractinian (massive),4
+Siderastrea siderea,67,Scleractinian (massive),4
+Siderastrea sp.,68,Scleractinian (massive),4
+Solenastrea bournoni,69,Scleractinian (massive),4
+Solenastrea hyades,70,Scleractinian (massive),4
+Solenastrea sp.,71,Scleractinian (massive),4
+Stephanocoenia intersepta,72,Scleractinian (massive),4
+Other (Scleractinian massive),73,Scleractinian (massive),4
+Dendrogyra cylindrus,74,Scleractinian (pillar),5
+Orbicella faveolata,75,Scleractinian (pillar),5
+Other (Scleractinian pillar),76,Scleractinian (pillar),5
+Scolymia cubensis,77,Scleractinian (solitary/ other),6
+Scolymia lacera,78,Scleractinian (solitary/ other),6
+Scolymia sp.,79,Scleractinian (solitary/ other),6
+Mussa angulosa,80,Scleractinian (solitary/ other),6
+Other (Scleractinian solitary/ other),81,Scleractinian (solitary/ other),6
+Acropora palmata,82,Scleractinian (encrusting),7
+Acropora prolifera,83,Scleractinian (encrusting),7
+Acropora sp.,84,Scleractinian (encrusting),7
+Agaricia agaricites (agaricites),85,Scleractinian (encrusting),7
+Agaricia fragilis,86,Scleractinian (encrusting),7
+Agaricia humilis,87,Scleractinian (encrusting),7
+Agaricia sp.,88,Scleractinian (encrusting),7
+Dendrogyra cylindrus,89,Scleractinian (encrusting),7
+Madracis decactis,90,Scleractinian (encrusting),7
+Madracis pharensis,91,Scleractinian (encrusting),7
+Madracis senaria,92,Scleractinian (encrusting),7
+Meandrina jacksoni,93,Scleractinian (encrusting),7
+Mycetophyllia ferox,94,Scleractinian (encrusting),7
+Porites astreoides,95,Scleractinian (encrusting),7
+Porites sp.,96,Scleractinian (encrusting),7
+Pseudodiploria clivosa,97,Scleractinian (encrusting),7
+Pseudodiploria strigosa,98,Scleractinian (encrusting),7
+Siderastrea radians,99,Scleractinian (encrusting),7
+Siderastrea siderea,100,Scleractinian (encrusting),7
+Siderastrea sp.,101,Scleractinian (encrusting),7
+Stephanocoenia intersepta,102,Scleractinian (encrusting),7
+Other (Scleractinian encrusting),103,Scleractinian (encrusting),7
+Madracis decactis,104,Scleractinian (knobby),8
+Madracis pharensis,105,Scleractinian (knobby),8
+Other (Scleractinian knobby),106,Scleractinian (knobby),8
+Cladocora arbuscula,107,Scleractinian (flower cup),9
+Eusmilia fastigata,108,Scleractinian (flower cup),9
+Other (Scleractinian flower cup),109,Scleractinian (flower cup),9
+Briareum asbestinum,110,Octocorals (erect),10
+Eunicea sp.,111,Octocorals (erect),10
+Gorgonia sp.,112,Octocorals (erect),10
+Muricea sp.,113,Octocorals (erect),10
+Muriocepsis sp.,114,Octocorals (erect),10
+Plexaura sp.,115,Octocorals (erect),10
+Plexaurella sp.,116,Octocorals (erect),10
+Pseudoplexaura sp.,117,Octocorals (erect),10
+Pseudopterogorgia sp.,118,Octocorals (erect),10
+Pterogorgia sp.,119,Octocorals (erect),10
+Other (Octocorals erect),120,Octocorals (erect),10
+Briareum asbestinum,121,Octocorals (encrusting),11
+Erythropodium caribaeorum,122,Octocorals (encrusting),11
+Other (octocoral encrusting),123,Octocorals (encrusting),11
+Cirrhipathes luetkeni,124,Antipatharia,12
+Other (Antipatharia),125,Antipatharia,12
+Millepora alcicornis,126,Hidrocorals,13
+Millepora complanata,127,Hidrocorals,13
+Millepora squarrosa,128,Hidrocorals,13
+Millepora sp.,129,Hidrocorals,13
+Stylaster,130,Hidrocorals,13
+Other (Hidrocoral),131,Hidrocorals,13
+Palythoa caribbaeorum,132,Zoanthids,14
+Zoanthus sp.,133,Zoanthids,14
+Agelas sp.,134,Sponge (massive),15
+Amphimedon sp.,135,Sponge (massive),15
+Aplysina sp.,136,Sponge (massive),15
+Callyspongia sp.,137,Sponge (massive),15
+Cinachyra sp.,138,Sponge (massive),15
+Clathria,139,Sponge (massive),15
+Cliona aprica (tenuis),140,Sponge (massive),15
+Cliona cliona,141,Sponge (massive),15
+Cliona delitryx,142,Sponge (massive),15
+Cliona sp.,143,Sponge (massive),15
+Desmapsamma sp.,144,Sponge (massive),15
+Diplastrella sp.,145,Sponge (massive),15
+Halisarca sp.,146,Sponge (massive),15
+Ircinia sp.,147,Sponge (massive),15
+Monanchora sp.,148,Sponge (massive),15
+Mycale sp.,149,Sponge (massive),15
+Niphates erecta,150,Sponge (massive),15
+Niphates sp.,151,Sponge (massive),15
+Phorbas sp.,152,Sponge (massive),15
+Plakortis sp.,153,Sponge (massive),15
+Ptilocaulis sp.,154,Sponge (massive),15
+Smenospongia sp.,155,Sponge (massive),15
+Spirastrella sp.,156,Sponge (massive),15
+Verongula rigida,157,Sponge (massive),15
+Verongula sp.,158,Sponge (massive),15
+Other (Sponge massive),159,Sponge (massive),15
+Agelas sp.,160,Sponge (encrusting),16
+Amphimedon sp.,161,Sponge (encrusting),16
+Aplysina sp.,162,Sponge (encrusting),16
+Callyspongia sp.,163,Sponge (encrusting),16
+Cinachyra sp.,164,Sponge (encrusting),16
+Clathria,165,Sponge (encrusting),16
+Cliona aprica (tenuis),166,Sponge (encrusting),16
+Cliona cliona,167,Sponge (encrusting),16
+Cliona delitryx,168,Sponge (encrusting),16
+Cliona sp.,169,Sponge (encrusting),16
+Desmapsamma sp.,170,Sponge (encrusting),16
+Diplastrella sp.,171,Sponge (encrusting),16
+Halisarca sp.,172,Sponge (encrusting),16
+Ircinia sp.,173,Sponge (encrusting),16
+Monanchora sp.,174,Sponge (encrusting),16
+Mycale sp.,175,Sponge (encrusting),16
+Niphates erecta,176,Sponge (encrusting),16
+Niphates sp.,177,Sponge (encrusting),16
+Phorbas sp.,178,Sponge (encrusting),16
+Plakortis sp.,179,Sponge (encrusting),16
+Ptilocaulis sp.,180,Sponge (encrusting),16
+Smenospongia sp.,181,Sponge (encrusting),16
+Spirastrella sp.,182,Sponge (encrusting),16
+Verongula rigida,183,Sponge (encrusting),16
+Verongula sp.,184,Sponge (encrusting),16
+Other (Sponge encrusting),185,Sponge (encrusting),16
+Agelas sp.,186,Sponge (erect),17
+Aiolochroia sp.,277,Sponge (erect),17
+Amphimedon sp.,187,Sponge (erect),17
+Aplysina sp.,188,Sponge (erect),17
+Callyspongia sp.,189,Sponge (erect),17
+Cinachyra sp.,190,Sponge (erect),17
+Clathria,191,Sponge (erect),17
+Cliona aprica (tenuis),192,Sponge (erect),17
+Cliona cliona,193,Sponge (erect),17
+Cliona delitryx,194,Sponge (erect),17
+Cliona sp.,195,Sponge (erect),17
+Desmapsamma sp.,196,Sponge (erect),17
+Diplastrella sp.,197,Sponge (erect),17
+Halisarca sp.,198,Sponge (erect),17
+Ircinia sp.,199,Sponge (erect),17
+Monanchora sp.,200,Sponge (erect),17
+Mycale sp.,201,Sponge (erect),17
+Niphates erecta,202,Sponge (erect),17
+Niphates sp.,203,Sponge (erect),17
+Phorbas sp.,204,Sponge (erect),17
+Plakortis sp.,205,Sponge (erect),17
+Ptilocaulis sp.,206,Sponge (erect),17
+Smenospongia sp.,207,Sponge (erect),17
+Spirastrella sp.,208,Sponge (erect),17
+Verongula rigida,209,Sponge (erect),17
+Verongula sp.,210,Sponge (erect),17
+Other (Sponge erect),211,Sponge (erect),17
+Cyanobacteria,216,Algae,18
+Turf,217,Algae,18
+Other (Algae),288,Algae,18
+Acetabularia,219,Fleshy algae,19
+Asparagopsis taxiformis,220,Fleshy algae,19
+Caulerpa racemosa,221,Fleshy algae,19
+Caulerpa sertularioides,222,Fleshy algae,19
+Caulerpa sp.,223,Fleshy algae,19
+Dictyota sp.,225,Fleshy algae,19
+Dyctiopteris sp.,226,Fleshy algae,19
+Dyctiosphaeria sp.,227,Fleshy algae,19
+Enteromorpha sp.,228,Fleshy algae,19
+Galaxaura sp.,229,Calcareous algae,24
+Gracilaria sp.,230,Fleshy algae,19
+Hannia sp.,232,Calcareous algae,24
+Lobophora variegata,233,Fleshy algae,19
+Padina sp.,235,Fleshy algae,19
+Sargassum sp.,237,Fleshy algae,19
+Stypoponium sp.,238,Fleshy algae,19
+Ulva sp.,240,Fleshy algae,19
+Ventricaria sp.,241,Fleshy algae,19
+Other clorophyta (Fleshy algae),292,Fleshy algae,19
+Other rhodophyta (Fleshy algae),293,Fleshy algae,19
+Other phaeophyta (Fleshy algae),294,Fleshy algae,19
+Other (Fleshy algae),242,Fleshy algae,19
+Halodule wrightii,243,Seagrass,20
+Halophila decipiens,244,Seagrass,20
+Halophila engelmanni,245,Seagrass,20
+Halophila johnsonii,246,Seagrass,20
+Ruppia maritima,247,Seagrass,20
+Syringodium filiforme,248,Seagrass,20
+Thalassia testudinum,249,Seagrass,20
+Other (seagrass),250,Seagrass,20
+Actinaria,251,Other invertebrates,21
+Corallimorpharia,252,Other invertebrates,21
+Diadema antillarum,253,Other invertebrates,21
+Bivalves,254,Other invertebrates,21
+Gasteropods,255,Other invertebrates,21
+Other moluscs,256,Other invertebrates,21
+Holothuroidea,257,Other invertebrates,21
+Spirobranchius sp.,258,Other invertebrates,21
+Other polychaete,259,Other invertebrates,21
+Tunicates,260,Other invertebrates,21
+Other (Other invertebrates),261,Other invertebrates,21
+Biotic (unknown),262,Unknown,22
+Dead calcareous algae,267,Abiotic,23
+Dead coral,268,Abiotic,23
+Dead octocoral,269,Abiotic,23
+Dead sponge,270,Abiotic,23
+Gap,271,Abiotic,23
+Rock,272,Abiotic,23
+Rubble,273,Abiotic,23
+Sand,274,Abiotic,23
+Trash,275,Abiotic,23
+Unknown,276,Abiotic,23
+Artifact,278,Abiotic,23
+Echinoidea,279,Other invertebrates,21
+Echinometra sp.,280,Other invertebrates,21
+Hydroidolina,281,Other invertebrates,21
+Palythoa sp.,212,Zoanthids,14
+Zoanthus pulchellus,282,Zoanthids,14
+Bare substrate,283,Abiotic,23
+Trichogloea sp.,284,Fleshy algae,19
+Scyphozoa (medusae),285,Other invertebrates,21
+Debris,286,Abiotic,23
+Halophila sp.,287,Seagrass,20
+Neofibularia,289,Sponge (massive),15
+Turbinaria sp.,290,Fleshy algae,19
+Crustose coraline,215,Calcareous algae,24
+Batophora sp.,297,Fleshy algae,19
+Halimeda sp.,231,Calcareous algae,24
+Rhipocephalus sp.,298,Calcareous algae,24
+Rhipiliopsis sp.,299,Calcareous algae,24
+Rhipilia sp.,300,Calcareous algae,24
+Jania sp.,213,Calcareous algae,24
+Amphiroa sp.,218,Calcareous algae,24
+Udotea sp.,239,Calcareous algae,24
+Penicillus sp.,236,Calcareous algae,24
+Neomeris sp.,234,Calcareous algae,24
+Cymopolia sp.,301,Calcareous algae,24
+Codium sp.,224,Calcareous algae,24
+Other (Calcareous algae),214,Calcareous algae,24
+Other rhodophyta (Calcareous algae),295,Calcareous algae,24
+Other clorophyta (Calcareous algae),296,Calcareous algae,24
+Mud,291,Abiotic,23
+Xetospongia sp.,263,Sponge (massive),15
+Dead hidrocoral,264,Abiotic,23
+Palythoa grandis,265,Zoanthids,14
+Palythoa grandiflora,266,Zoanthids,14
+Eucheuma sp.,302,Fleshy algae,19
+Clavelina sp.,303,Other invertebrates,21
+Pseudodiploria sp.,304,Scleractinian (encrusting),7
+Tubastrea sp.,305,Scleractinian (flower cup),9
+Tubastrea coccinea,306,Scleractinian (flower cup),9
+Acanthophora sp.,307,Fleshy algae,19
