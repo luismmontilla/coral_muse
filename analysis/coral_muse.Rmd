@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(magrittr)
 library(vegan)
-library(cowplot)
+#library(cowplot)
 library(jtools)
 library(trafo)
 library(colorblindr)
@@ -28,8 +28,9 @@ source('r/BootResampler.R')
 ```
 
 ```{r}
-if (!dir.exists('analysis/figures')){
-dir.create('analysis/figures')}
+if (!dir.exists('analysis/figures')){dir.create('analysis/figures')}
+
+if (!dir.exists('analysis/outcomes')){dir.create('analysis/outcomes')}
 ```
 
 
@@ -187,8 +188,16 @@ for(i in 1:length(NTransects)) {
 DF <- DF %>%
   mutate(range = upper-lower) %>% 
   mutate(prop = range/mse) %>% 
-  rename(transects = replicate, quadrats = nquads, points = npoint)
+  rename(transects = replicate, quadrats = nquads, points = npoints)
 ```
+
+We can write this object to save computation time in the future:
+
+```{r}
+#saveRDS(DF, 'analysis/outcomes/DF.rds')
+#readRDS('analysis/outcomes/DF.rds')
+```
+
 
 #Comparison
 
@@ -251,7 +260,18 @@ diagnostics(trafo_lm(mod))
 bc_mod <- trafo_lm(mod)
 
 summary(bc_mod$trafo_mod)
+```
 
-plot_summs(bc_mod$trafo_mod)  
+```{r figure02}
+plot_coefs(bc_mod$trafo_mod, colors = 'black', scale = TRUE) +
+  theme_nice() +
+  geom_rect(xmin = -Inf, xmax = Inf,   ymin = 0, ymax = 1.3,   
+            fill = "gray", alpha = 0.05) +
+  geom_rect(xmin = -Inf, xmax = Inf,   ymin = 1.5, ymax = 4.3,   
+            fill = "gray", alpha = 0.05) +
+  geom_rect(xmin = -Inf, xmax = Inf,   ymin = 4.5, ymax = Inf,   
+            fill = "gray", alpha = 0.05) +
+  labs(y = 'Term')
 #ggsave('analysis/figures/fig02.png')
 ```
+
