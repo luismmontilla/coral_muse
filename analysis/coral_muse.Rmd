@@ -50,7 +50,7 @@ coral_spp <- read.csv('data/caribbean_spp.csv')
 
 ```{r coral absolute cover, warning=FALSE}
 coral_cover <-   reef_pts %>% 
-  select(-c(1:7)) %>% 
+  select(-c(1:6)) %>% 
   select(one_of(as.character(coral_spp[coral_spp$Group.ID %in% c(1:9), "Species.name"]))) %>% 
   divide_by(375) %>% 
   multiply_by(100) %>%
@@ -97,8 +97,7 @@ field_mse$sites <- factor(field_mse$sites,
 ```{r}
 ggplot(field_mse, aes(x = fct_rev(sites), 
                       y = mse, 
-                      fill = Locality)
-       ) + 
+                      fill = Locality)) + 
   geom_bar(stat = 'identity') +
   geom_errorbar(aes(ymin = lower, ymax = upper), 
                 width= .1) +
@@ -110,6 +109,48 @@ ggplot(field_mse, aes(x = fct_rev(sites),
   scale_fill_OkabeIto() 
 
   #ggsave('analysis/figures/fig01.png')
+```
+
+# Univariate precision
+
+```{r}
+cover_prec <- reef_pts %>% 
+  #select(-c(1:6)) %>% 
+  select(one_of(as.character(coral_spp[coral_spp$Group.ID %in% c(1:9), "Species.name"]))) %>% 
+  divide_by(375) %>% 
+  multiply_by(100) %>%
+  mutate(total = rowSums(.[])) %>%
+  select(total) %>% 
+  bind_cols(reef_pts[,c(1:6)]) %>% 
+  group_by(Site, Locality) %>% 
+  summarise(mean_cover = mean(total), sd_cover = sd(total), n = length(total)) %>% 
+  mutate(precision = (sd_cover/sqrt(n))/mean_cover) %>% 
+  mutate(se = (sd_cover/sqrt(n))) %>% 
+  rename(sites = Site)
+
+cover_prec$sites <- factor(cover_prec$sites, 
+                           levels = cover_prec$sites[order(cover_prec$Locality)])
+
+ggplot(cover_prec, aes(x = fct_rev(sites), 
+                      y = se, 
+                      fill = Locality)) + 
+  geom_bar(stat = 'identity') +
+  #geom_errorbar(aes(ymin = lower, ymax = upper), 
+  #              width= .1) +
+  coord_flip() +
+  #geom_hline(yintercept = mean(field_mse$mse),
+  #           alpha=0.25,
+  #           size = 2) +
+  labs(x = "Sites", y = 'Univariate standard error') +
+  scale_fill_OkabeIto() 
+```
+
+```{r}
+field_mse[,c('mse', 'sites')] %>% 
+  left_join(cover_prec[,c('se', 'sites')]) %>% 
+  ggplot(aes(x = se, y = mse, label = sites)) +
+  geom_point() +
+  geom_text()
 ```
 
 
@@ -195,11 +236,11 @@ We can write this object to save computation time in the future:
 
 ```{r}
 #saveRDS(DF, 'analysis/outcomes/DF.rds')
-#readRDS('analysis/outcomes/DF.rds')
+#DF <- readRDS('analysis/outcomes/DF.rds')
 ```
 
 
-#Comparison
+#Field vs bootstrapped data
 
 We can compare if the MuSE behaves the same in the field and bootstrapped datasets
 
