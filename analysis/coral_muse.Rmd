@@ -94,7 +94,7 @@ field_mse$sites <- factor(field_mse$sites,
 
 # Achieved precision
 
-```{r}
+```{r fig01}
 ggplot(field_mse, aes(x = fct_rev(sites), 
                       y = mse, 
                       fill = Locality)) + 
@@ -106,9 +106,9 @@ ggplot(field_mse, aes(x = fct_rev(sites),
              alpha=0.25,
              size = 2) +
   labs(x = "Sites", y = 'Multivariate standard error') +
-  scale_fill_OkabeIto() 
+  scale_fill_OkabeIto()
 
-  #ggsave('analysis/figures/fig01.png')
+  #ggsave('analysis/figures/fig01.png', height = 7.45)
 ```
 
 # Univariate precision
@@ -145,14 +145,23 @@ ggplot(cover_prec, aes(x = fct_rev(sites),
   scale_fill_OkabeIto() 
 ```
 
-```{r}
-field_mse[,c('mse', 'sites')] %>% 
-  left_join(cover_prec[,c('se', 'sites')]) %>% 
-  ggplot(aes(x = se, y = mse, label = sites)) +
-  geom_point() +
-  geom_text()
-```
+```{r fig02}
+field_mse[,c('mse', 'sites', 'Locality')] %>% 
+  left_join(cover_prec[,c('se', 'sites', 'Locality')]) %>% 
+  ggplot(aes(x = se, 
+             y = mse, 
+             label = sites,
+             color = Locality,
+             size = 2)) +
+  geom_point(position = 'jitter') +
+  scale_color_OkabeIto() +
+  guides(size = FALSE) +
+  labs(x = "Univariate standard error",
+       y = "Multivariate standard error")+
+  theme(legend.position="bottom")
 
+ggsave('analysis/figures/fig02.png')
+```
 
 Now we choose the set of sites for resampling
 
@@ -303,7 +312,7 @@ bc_mod <- trafo_lm(mod)
 summary(bc_mod$trafo_mod)
 ```
 
-```{r figure02}
+```{r figure03}
 plot_coefs(bc_mod$trafo_mod, colors = 'black', scale = TRUE) +
   theme_nice() +
   geom_rect(xmin = -Inf, xmax = Inf,   ymin = 0, ymax = 1.3,   
@@ -313,6 +322,6 @@ plot_coefs(bc_mod$trafo_mod, colors = 'black', scale = TRUE) +
   geom_rect(xmin = -Inf, xmax = Inf,   ymin = 4.5, ymax = Inf,   
             fill = "gray", alpha = 0.05) +
   labs(y = 'Term')
-#ggsave('analysis/figures/fig02.png')
+#ggsave('analysis/figures/fig03.png')
 ```
 
