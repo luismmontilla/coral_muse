@@ -28,7 +28,7 @@ for(i in 1:length(Transectas)) {
   
   #Factores <- c(Transectas[i], "", strsplit((gsub(".rndpts.csv", "", Transectas[i])), split = "_")[[1]])
   Factores <- c(Transectas[i], "", strsplit((gsub(".rndpts.csv", "", Transectas[i])), split = "_")[[1]])
-  Factores[2:3] <- as.character(Localidades[grep(gsub(".rndpts.csv", "", Transectas[i]), Localidades$File), ])[c(2:3)]
+  Factores[2:3] <- as.character(Localidades[grep(gsub("data/transects/|.rndpts.csv", "", Transectas[i]), Localidades$File), ])[c(2:3)]
   
   
   #### Matriz para Verificar errores en numero de puntos ####
@@ -36,7 +36,7 @@ for(i in 1:length(Transectas)) {
     Factores[4] <- Factores[5]
   }
   ErrorCheck[i, 1:4] <- Factores
-  ErrorCheck[i, 5]   <- as.character(Localidades[grep(gsub(".rndpts.csv", "", Transectas[i]), Localidades$File), ])[c(5)]
+  ErrorCheck[i, 5]   <- as.character(Localidades[grep(gsub("data/transects/|.rndpts.csv", "", Transectas[i]), Localidades$File), ])[c(5)]
   ErrorCheck[i, 6]   <- length(unique(Transecta$Image))
   ErrorCheck[i, 7]   <- sum(Transecta$N.pts.per.species)
   ErrorCheck[i, 8]   <- sum(Transecta[Transecta$spp.Name == "Unassigned", ]$N.pts.per.species)
