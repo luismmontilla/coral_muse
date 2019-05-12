@@ -130,19 +130,6 @@ cover_prec <- reef_pts %>%
 
 cover_prec$sites <- factor(cover_prec$sites, 
                            levels = cover_prec$sites[order(cover_prec$Locality)])
-
-ggplot(cover_prec, aes(x = fct_rev(sites), 
-                      y = se, 
-                      fill = Locality)) + 
-  geom_bar(stat = 'identity') +
-  #geom_errorbar(aes(ymin = lower, ymax = upper), 
-  #              width= .1) +
-  coord_flip() +
-  #geom_hline(yintercept = mean(field_mse$mse),
-  #           alpha=0.25,
-  #           size = 2) +
-  labs(x = "Sites", y = 'Univariate standard error') +
-  scale_fill_OkabeIto() 
 ```
 
 ```{r fig02}
@@ -158,9 +145,11 @@ field_mse[,c('mse', 'sites', 'Locality')] %>%
   guides(size = FALSE) +
   labs(x = "Univariate standard error",
        y = "Multivariate standard error")+
-  theme(legend.position="bottom")
+  theme(legend.position="bottom") +
+  annotate("text", label = "Pearson's correlation = 0.14", 
+           x = 4.3, y = 0.25)
 
-ggsave('analysis/figures/fig02.png')
+#ggsave('analysis/figures/fig02b.png')
 ```
 
 Now we choose the set of sites for resampling
