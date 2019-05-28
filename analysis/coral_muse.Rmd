@@ -108,7 +108,7 @@ ggplot(field_mse, aes(x = fct_rev(sites),
   labs(x = "Sites", y = 'Multivariate standard error') +
   scale_fill_OkabeIto()
 
-  #ggsave('analysis/figures/fig01.png', height = 7.45)
+  #ggsave('analysis/figures/fig01.svg')
 ```
 
 # Univariate precision
@@ -149,7 +149,7 @@ field_mse[,c('mse', 'sites', 'Locality')] %>%
   annotate("text", label = "Pearson's correlation = 0.14", 
            x = 4.3, y = 0.25)
 
-#ggsave('analysis/figures/fig02b.png')
+#ggsave('analysis/figures/fig02.svg')
 ```
 
 Now we choose the set of sites for resampling
@@ -311,6 +311,6 @@ plot_coefs(bc_mod$trafo_mod, colors = 'black', scale = TRUE) +
   geom_rect(xmin = -Inf, xmax = Inf,   ymin = 4.6, ymax = 7.4,  
             fill = "gray", alpha = 0.05) +
   labs(y = 'Term')
-#ggsave('analysis/figures/fig03.png')
+#ggsave('analysis/figures/fig03.svg')
 ```
 
