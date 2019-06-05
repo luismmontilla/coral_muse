@@ -111,6 +111,17 @@ ggplot(field_mse, aes(x = fct_rev(sites),
   #ggsave('analysis/figures/fig01.svg')
 ```
 
+
+```{r coral richness, warning=FALSE}
+coral_rich <- reef_pts %>% 
+  select(-c(1:6)) %>% 
+  select(one_of(as.character(coral_spp[coral_spp$Group.ID %in% c(1:9), "Species.name"]))) %>%
+  specnumber(groups = reef_pts$Site) %>% 
+  data.frame() %>% 
+  rename(richness = '.') %>% 
+  rownames_to_column('sites')
+```
+
 # Univariate precision
 
 ```{r}
@@ -132,10 +143,15 @@ cover_prec$sites <- factor(cover_prec$sites,
                            levels = cover_prec$sites[order(cover_prec$Locality)])
 ```
 
-```{r fig02}
-field_mse[,c('mse', 'sites', 'Locality')] %>% 
+```{r coral summary}
+coral_summ <- field_mse[,c('mse', 'sites', 'Locality')] %>% 
   left_join(cover_prec[,c('se', 'sites', 'Locality')]) %>% 
-  ggplot(aes(x = se, 
+  left_join(coral_rich)
+```
+
+
+```{r fig02}
+ggplot(coral_summ, aes(x = se, 
              y = mse, 
              label = sites,
              color = Locality,
@@ -146,8 +162,24 @@ field_mse[,c('mse', 'sites', 'Locality')] %>%
   labs(x = "Univariate standard error",
        y = "Multivariate standard error")+
   theme(legend.position="bottom") +
-  annotate("text", label = "Pearson's correlation = 0.14", 
+  annotate("text", label = paste("Pearson's correlation =", 
+                                 round(cor(coral_summ$mse, coral_summ$se), 3)), 
            x = 4.3, y = 0.25)
+
+ggplot(coral_summ, aes(x = richness, 
+             y = mse, 
+             label = sites,
+             color = Locality,
+             size = 2)) +
+  geom_point(position = 'jitter') +
+  scale_color_OkabeIto() +
+  guides(size = FALSE) +
+  labs(x = "Coral species richness",
+       y = "Multivariate standard error")+
+  theme(legend.position="bottom") +
+  annotate("text", label = paste("Pearson's correlation =", 
+                                 round(cor(coral_summ$mse, coral_summ$richness), 3)), 
+           x = 12, y = 0.25)
 
 #ggsave('analysis/figures/fig02.svg')
 ```
