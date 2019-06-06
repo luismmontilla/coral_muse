@@ -23,6 +23,7 @@ library(vegan)
 library(jtools)
 library(trafo)
 library(colorblindr)
+library(cowplot)
 source('r/MSEgroup.r')
 source('r/BootResampler.R')
 ```
@@ -151,22 +152,22 @@ coral_summ <- field_mse[,c('mse', 'sites', 'Locality')] %>%
 
 
 ```{r fig02}
-ggplot(coral_summ, aes(x = se, 
-             y = mse, 
-             label = sites,
-             color = Locality,
-             size = 2)) +
+p1 <- ggplot(coral_summ, aes(x = se,
+                             y = mse, 
+                             label = sites,
+                             color = Locality,
+                             size = 2)) +
   geom_point(position = 'jitter') +
   scale_color_OkabeIto() +
   guides(size = FALSE) +
   labs(x = "Univariate standard error",
        y = "Multivariate standard error")+
-  theme(legend.position="bottom") +
-  annotate("text", label = paste("Pearson's correlation =", 
-                                 round(cor(coral_summ$mse, coral_summ$se), 3)), 
-           x = 4.3, y = 0.25)
+  annotate("text", 
+           label = paste("Pearson's correlation =", 
+                                 round(cor(coral_summ$mse, coral_summ$se), 2)), 
+           x = 3, y = 0.25)
 
-ggplot(coral_summ, aes(x = richness, 
+p2 <- ggplot(coral_summ, aes(x = richness, 
              y = mse, 
              label = sites,
              color = Locality,
@@ -175,11 +176,22 @@ ggplot(coral_summ, aes(x = richness,
   scale_color_OkabeIto() +
   guides(size = FALSE) +
   labs(x = "Coral species richness",
-       y = "Multivariate standard error")+
-  theme(legend.position="bottom") +
-  annotate("text", label = paste("Pearson's correlation =", 
-                                 round(cor(coral_summ$mse, coral_summ$richness), 3)), 
-           x = 12, y = 0.25)
+       y = "Multivariate standard error") +
+  annotate("text", 
+           label = paste("Pearson's correlation =", 
+                                 round(cor(coral_summ$mse, coral_summ$richness), 2)), 
+           x = 8.5, y = 0.25)
+
+plot_grid(
+  plot_grid(
+    p1 + theme(legend.position = 'none'),
+    p2 + theme(legend.position = 'none'),
+    nrow = 1, align = "v", labels = c('A', 'B')
+    ),
+  get_legend(p1 + scale_shape(guide = FALSE) + 
+      theme(legend.position = "bottom")),
+  ncol=1, rel_heights=c(.85, .15)
+)
 
 #ggsave('analysis/figures/fig02.svg')
 ```
