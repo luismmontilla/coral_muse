@@ -230,10 +230,10 @@ for(i in 1:length(NTransects)) {
                     randomseed = 1)
       
       group_DF <- boot_DF %>% 
-        select(2:7)
+        select(2:6)
       
       mse_DF <- boot_DF %>% 
-        select(-c(1:7)) %>%
+        select(-c(1:6)) %>%
         select(one_of(as.character(coral_spp[coral_spp$Group.ID %in% c(1:9), "Species.name"]))) %>% 
         divide_by(375) %>% 
         multiply_by(100) %>%
@@ -293,13 +293,14 @@ set1 <- raw_mse %>%
           mutate(type='field')
 
 set2 <- DF %>% 
-  select(mse, sites, transects) %>% 
-  mutate(type='boot') 
+  select(mse, sites, replicate) %>% 
+  rename(transects = replicate) %>% 
+  mutate(type='boot')
   
 bind_rows(set1, set2) %>% 
   filter(sites =='Salinas') %>% #choose an specific site
   ggplot(aes(x = transects, y = mse, shape = type, color = type)) + 
-  geom_point()
+  geom_point(position = 'jitter')
 ```
 
 # Plots
@@ -317,7 +318,7 @@ ggplot(DF, aes(x = transects, y = mse)) +
 
 ```{r Case Punta Cruz}
 DF %>% 
-  filter(sites %in% c('Punta Cruz'))%>% 
+  filter(sites %in% c('Salinas'))%>% 
   mutate(points = as.factor(points), 
          quadrats = as.factor(quadrats)) %>% 
   ggplot(aes(x = transects, y = mse)) +
@@ -348,13 +349,96 @@ summary(bc_mod$trafo_mod)
 ```{r figure03}
 plot_coefs(bc_mod$trafo_mod, colors = 'black', scale = TRUE) +
   theme_nice() +
-  geom_rect(xmin = -Inf, xmax = Inf,   ymin = 0.6, ymax = 1.4,   
+  geom_rect(xmin = -Inf, xmax = Inf, ymin = 0.6, ymax = 1.4,   
             fill = "gray", alpha = 0.05) +
-  geom_rect(xmin = -Inf, xmax = Inf,   ymin = 1.6, ymax = 4.4,   
+  geom_rect(xmin = -Inf, xmax = Inf, ymin = 1.6, ymax = 4.4,   
             fill = "gray", alpha = 0.05) +
-  geom_rect(xmin = -Inf, xmax = Inf,   ymin = 4.6, ymax = 7.4,  
+  geom_rect(xmin = -Inf, xmax = Inf, ymin = 4.6, ymax = 7.4,  
             fill = "gray", alpha = 0.05) +
   labs(y = 'Term')
 #ggsave('analysis/figures/fig03.svg')
+```
+
+# New configuration
+
+```{r}
+boot_DF2 <- BootResampler(DataFrame = available_files, 
+                    nbTransects = 10, 
+                    nbQuadrats = 10, 
+                    nbPoints = 25, 
+                    transects_folder = "data/transects/", 
+                    SpMatrix_Path = coral_spp, 
+                    randomseed = 1)
+
+group_DF2 <- boot_DF2 %>% 
+        select(2:6)
+      
+boot_disp <- boot_DF2 %>% 
+  select(-c(1:6)) %>%
+  select(one_of(as.character(coral_spp[coral_spp$Group.ID %in% c(1:9), "Species.name"]))) %>% 
+  divide_by(375) %>% 
+  multiply_by(100) %>%
+  mutate(dummy = 1) %>%   #add a dummy variable
+  vegdist(method = "bray") %>% 
+  betadisper(group = group_DF2$Site, type = 'centroid')
+
+boot_vectors <- boot_disp$vectors %>% 
+  data.frame() %>% 
+  mutate(Site = as.factor(group_DF2$Site))
+```
+
+## Field subset
+
+```{r}
+sites_subset <- reef_pts %>% 
+  filter(Site %in% droplevels(group_DF2$Site)) %>% 
+  select(2:6)
+
+coral_subset <- reef_pts %>% 
+  filter(Site %in% droplevels(group_DF2$Site)) %>%
+  select(-c(1:6)) %>% 
+  select(one_of(as.character(coral_spp[coral_spp$Group.ID %in% c(1:9), "Species.name"]))) %>% 
+  divide_by(375) %>% 
+  multiply_by(100) %>%
+  mutate(dummy = 1) %>%   #add a dummy variable
+  vegdist(method = "bray") %>% 
+  betadisper(group = sites_subset$Site, type = 'centroid')
+
+coral_vectors <- coral_subset$vectors %>% 
+  data.frame() %>% 
+  mutate(Site = droplevels(sites_subset$Site)) %>% 
+  select(c(PCoA1, PCoA2, Site))
+
+coral_centroids <- coral_subset$centroids %>% 
+  data.frame() %>% 
+  rownames_to_column('Site')
+```
+
+## both pco
+
+```{r}
+plot_grid(
+ggplot(coral_centroids, aes(x = PCoA1, y = PCoA2, label = Site)) +
+  geom_text() +
+  stat_ellipse(aes(x = PCoA1, 
+                   y = PCoA2),
+               data = coral_vectors,
+               level = 0.68,
+               size = 1) +
+  ggtitle('original')
+,
+boot_disp$centroids %>% 
+  data.frame() %>% 
+  rownames_to_column('Site') %>% 
+  ggplot(aes(x = PCoA1, 
+             y = PCoA2, 
+             label = Site)
+         ) +
+  geom_text() +
+  ggtitle("10 trans") +
+  stat_ellipse(aes(x = PCoA1, y = PCoA2),
+               data = coral_vectors,
+               color = Site)
+)
 ```
 
