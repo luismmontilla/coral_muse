@@ -24,6 +24,7 @@ library(jtools)
 library(trafo)
 library(colorblindr)
 library(cowplot)
+library(ggrepel)
 source('r/MSEgroup.r')
 source('r/BootResampler.R')
 ```
@@ -385,6 +386,10 @@ boot_disp <- boot_DF2 %>%
 boot_vectors <- boot_disp$vectors %>% 
   data.frame() %>% 
   mutate(Site = as.factor(group_DF2$Site))
+
+boot_centroids <- boot_disp$centroids %>% 
+  data.frame() %>% 
+  rownames_to_column('Site')
 ```
 
 ## Field subset
@@ -417,28 +422,28 @@ coral_centroids <- coral_subset$centroids %>%
 ## both pco
 
 ```{r}
-plot_grid(
 ggplot(coral_centroids, aes(x = PCoA1, y = PCoA2, label = Site)) +
-  geom_text() +
-  stat_ellipse(aes(x = PCoA1, 
-                   y = PCoA2),
-               data = coral_vectors,
-               level = 0.68,
-               size = 1) +
-  ggtitle('original')
-,
-boot_disp$centroids %>% 
-  data.frame() %>% 
-  rownames_to_column('Site') %>% 
-  ggplot(aes(x = PCoA1, 
-             y = PCoA2, 
-             label = Site)
-         ) +
-  geom_text() +
-  ggtitle("10 trans") +
-  stat_ellipse(aes(x = PCoA1, y = PCoA2),
-               data = coral_vectors,
-               color = Site)
-)
+  geom_point() +
+  geom_label_repel(aes(label = Site), point.padding = 0.5) +
+  ylim(-1, 1) +
+  xlim(-1, 1) +
+  ggtitle('15q, 4t') +
+  stat_ellipse(data = subset(coral_vectors, Site %in% c('Salinas')), alpha = 0.5) +
+  stat_ellipse(data = subset(coral_vectors, Site %in% c('Charagato')), alpha = 0.5) +
+  stat_ellipse(data = subset(coral_vectors, Site %in% c('Dos Mosquises Sur')), alpha = 0.5) +
+  stat_ellipse(data = subset(coral_vectors, Site %in% c('Punta Conejo')), alpha = 0.5)
+```
+
+```{r}
+ggplot(boot_centroids, aes(x = PCoA1, y = -PCoA2, label = Site)) +
+  geom_point() +
+  geom_label_repel(aes(label = Site), point.padding = 0.5) +
+  ylim(-1, 1) +
+  xlim(-1, 1) +
+  ggtitle('10q, 10t') +
+  stat_ellipse(data = subset(boot_vectors, Site %in% c('Salinas')), alpha = 0.5) +
+  stat_ellipse(data = subset(boot_vectors, Site %in% c('Charagato')), alpha = 0.5) +
+  stat_ellipse(data = subset(boot_vectors, Site %in% c('Dos Mosquises Sur')), alpha = 0.5) +
+  stat_ellipse(data = subset(boot_vectors, Site %in% c('Punta Conejo')), alpha = 0.5)
 ```
 
