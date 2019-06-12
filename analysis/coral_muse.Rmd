@@ -422,28 +422,92 @@ coral_centroids <- coral_subset$centroids %>%
 ## both pco
 
 ```{r}
-ggplot(coral_centroids, aes(x = PCoA1, y = PCoA2, label = Site)) +
+p1 <- ggplot(coral_centroids, aes(x = PCoA1, y = PCoA2, 
+                                  label = Site, color = Site)) +
   geom_point() +
-  geom_label_repel(aes(label = Site), point.padding = 0.5) +
-  ylim(-1, 1) +
-  xlim(-1, 1) +
+  geom_label_repel(aes(label = Site), point.padding = 2) +
+  ylim(-0.7, 0.7) +
+  xlim(-0.7, 0.7) +
   ggtitle('15q, 4t') +
-  stat_ellipse(data = subset(coral_vectors, Site %in% c('Salinas')), alpha = 0.5) +
-  stat_ellipse(data = subset(coral_vectors, Site %in% c('Charagato')), alpha = 0.5) +
-  stat_ellipse(data = subset(coral_vectors, Site %in% c('Dos Mosquises Sur')), alpha = 0.5) +
-  stat_ellipse(data = subset(coral_vectors, Site %in% c('Punta Conejo')), alpha = 0.5)
+  theme(legend.position = 'none') +
+  stat_ellipse(data = subset(coral_vectors, Site %in% c('Salinas')), 
+               alpha = 0.3,
+               level = 0.68) +
+  stat_ellipse(data = subset(coral_vectors, Site %in% c('Charagato')), 
+               alpha = 0.3,
+               level = 0.68) +
+  stat_ellipse(data = subset(coral_vectors, Site %in% c('Punta Conejo')), 
+               alpha = 0.3,
+               level = 0.68) +
+  stat_ellipse(data = subset(coral_vectors, Site %in% c('Cienaga oeste')), 
+               alpha = 0.3,
+               level = 0.68) +
+  stat_ellipse(data = subset(coral_vectors, Site %in% c('Punta Cruz')), 
+               alpha = 0.3,
+               level = 0.68) +
+  stat_ellipse(data = subset(coral_vectors, Site %in% c('Guabinitas')), 
+               alpha = 0.3,
+               level = 0.68) +
+  stat_ellipse(data = subset(coral_vectors, Site %in% c('Madrisqui')), 
+               alpha = 0.3,
+               level = 0.68) +
+  stat_ellipse(data = subset(coral_vectors, Site %in% c('Mero')), 
+               alpha = 0.3,
+               level = 0.68) +
+    stat_ellipse(data = subset(coral_vectors, Site %in% c('Punta de Media Legua')), 
+               alpha = 0.3,
+               level = 0.68) +
+    stat_ellipse(data = subset(coral_vectors, Site %in% c('Salinas')), 
+               alpha = 0.3,
+               level = 0.68) +
+  stat_ellipse(data = subset(coral_vectors, Site %in% c('Dos Mosquises Sur')), 
+               alpha = 0.3,
+               level = 0.68) +
+  stat_ellipse(data = subset(coral_vectors, Site %in% c('Boca Seca')), 
+               alpha = 0.3,
+               level = 0.68) +
+  stat_ellipse(data = subset(coral_vectors, Site %in% c('La Muerta')), 
+               alpha = 0.3,
+               level = 0.68)
 ```
 
 ```{r}
-ggplot(boot_centroids, aes(x = PCoA1, y = -PCoA2, label = Site)) +
+p2 <- ggplot(boot_centroids, aes(x = PCoA1, y = -PCoA2, label = Site)) +
   geom_point() +
   geom_label_repel(aes(label = Site), point.padding = 0.5) +
-  ylim(-1, 1) +
-  xlim(-1, 1) +
+  ylim(-0.7, 0.7) +
+  xlim(-0.7, 0.7) +
   ggtitle('10q, 10t') +
-  stat_ellipse(data = subset(boot_vectors, Site %in% c('Salinas')), alpha = 0.5) +
-  stat_ellipse(data = subset(boot_vectors, Site %in% c('Charagato')), alpha = 0.5) +
-  stat_ellipse(data = subset(boot_vectors, Site %in% c('Dos Mosquises Sur')), alpha = 0.5) +
-  stat_ellipse(data = subset(boot_vectors, Site %in% c('Punta Conejo')), alpha = 0.5)
+  stat_ellipse(data = subset(boot_vectors, Site %in% c('Salinas')), 
+               alpha = 0.3,
+               level = 0.68) +
+    stat_ellipse(data = subset(boot_vectors, Site %in% c('Charagato')), 
+               alpha = 0.3,
+               level = 0.68) +
+    stat_ellipse(data = subset(boot_vectors, Site %in% c('Punta Conejo')), 
+               alpha = 0.3,
+               level = 0.68) +
+    stat_ellipse(data = subset(boot_vectors, Site %in% c('Cienaga oeste')), 
+               alpha = 0.3,
+               level = 0.68)
 ```
+
+```{r}
+plot_grid(p1,p2)
+```
+
+```{r}
+ggplot(aes(x = PCoA1, y = PCoA2, label = Site), data = subset(coral_centroids, Site %in% c('Cienaga oeste'))) +
+  geom_point(shape = 2) +
+  geom_text(aes(x = PCoA1, y = PCoA2), data = subset(coral_vectors, Site %in% c('Cienaga oeste'))) +
+  stat_ellipse(data = subset(coral_vectors, Site %in% c('Cienaga oeste')), alpha = 0.3,
+               level = 0.68) +
+  geom_point(aes(x = PCoA1, y = PCoA2), data = subset(boot_vectors, Site %in% c('Cienaga oeste'))) +
+  geom_point(aes(x = PCoA1, y = PCoA2), shape = 2,
+             data = subset(boot_centroids, Site %in% c('Cienaga oeste'))) +
+  stat_ellipse(data = subset(boot_vectors, Site %in% c('Cienaga oeste')), alpha = 0.3,
+               level = 0.68)
+```
+
+
 
