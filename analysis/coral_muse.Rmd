@@ -23,6 +23,7 @@ library(vegan)
 library(jtools)
 library(trafo)
 library(colorblindr)
+library(viridis)
 library(cowplot)
 library(ggrepel)
 source('r/MSEgroup.r')
@@ -33,8 +34,9 @@ source('r/BootResampler.R')
 if (!dir.exists('analysis/figures')){dir.create('analysis/figures')}
 
 if (!dir.exists('analysis/outcomes')){dir.create('analysis/outcomes')}
-```
 
+if (!dir.exists('supplementary')){dir.create('supplementary')}
+```
 
 # Field data
 
@@ -59,6 +61,8 @@ coral_cover <-   reef_pts %>%
   mutate(dummy = 1) %>%   #add a dummy variable
   vegdist(method = "bray")
 ```
+
+## Field data MuSE 
 
 ```{r mse and tidy format}
 raw_mse <- coral_cover %>% 
@@ -93,8 +97,7 @@ field_mse$sites <- factor(field_mse$sites,
                            levels = field_mse$sites[order(field_mse$Locality)])
 ```
 
-
-# Achieved precision
+## Fig 01
 
 ```{r fig01}
 ggplot(field_mse, aes(x = fct_rev(sites), 
@@ -113,6 +116,7 @@ ggplot(field_mse, aes(x = fct_rev(sites),
   #ggsave('analysis/figures/fig01.svg')
 ```
 
+### Richness
 
 ```{r coral richness, warning=FALSE}
 coral_rich <- reef_pts %>% 
@@ -124,7 +128,7 @@ coral_rich <- reef_pts %>%
   rownames_to_column('sites')
 ```
 
-# Univariate precision
+### Univariate precision
 
 ```{r}
 cover_prec <- reef_pts %>% 
@@ -151,6 +155,7 @@ coral_summ <- field_mse[,c('mse', 'sites', 'Locality')] %>%
   left_join(coral_rich)
 ```
 
+## Fig 02
 
 ```{r fig02}
 p1 <- ggplot(coral_summ, aes(x = se,
@@ -205,11 +210,7 @@ field_mse %>%
   filter(range %in% head(range, 12))
 ```
 
-
-# Transects
-
-
-#Dataset construction
+# Dataset construction
 
 ```{r}
 NTransects <- 20
@@ -282,8 +283,9 @@ We can write this object to save computation time in the future:
 #DF <- readRDS('analysis/outcomes/DF.rds')
 ```
 
+# Some diagnostic plots
 
-#Field vs bootstrapped data
+## Field vs bootstrapped data
 
 We can compare if the MuSE behaves the same in the field and bootstrapped datasets
 
@@ -294,17 +296,17 @@ set1 <- raw_mse %>%
           mutate(type='field')
 
 set2 <- DF %>% 
-  select(mse, sites, replicate) %>% 
-  rename(transects = replicate) %>% 
+  select(mse, sites, transects) %>% 
   mutate(type='boot')
   
 bind_rows(set1, set2) %>% 
   filter(sites =='Salinas') %>% #choose an specific site
-  ggplot(aes(x = transects, y = mse, shape = type, color = type)) + 
-  geom_point(position = 'jitter')
+  ggplot(aes(x = transects, y = mse, shape = type, color = type, size = 0.1)) + 
+  geom_point() +
+  scale_color_OkabeIto()
 ```
 
-# Plots
+
 
 ##  Global
 
@@ -312,14 +314,19 @@ bind_rows(set1, set2) %>%
 ggplot(DF, aes(x = transects, y = mse)) +
   geom_point() +
   facet_grid(quadrats~points) +
-  theme(panel.grid.major = element_line(colour='gray90'))
+  theme(panel.grid.major = element_line(colour='gray90'),
+        plot.title = element_text(size = 14, 
+                                  face = "plain")) +
+  ggtitle('Points per quadrat') +
+  ylab('Multivariate standard error') +
+  xlab('Transects')
 ```
 
 ##  Particular cases
 
 ```{r Case Punta Cruz}
 DF %>% 
-  filter(sites %in% c('Salinas'))%>% 
+  filter(sites %in% c('Salinas')) %>% #replace site to study other place
   mutate(points = as.factor(points), 
          quadrats = as.factor(quadrats)) %>% 
   ggplot(aes(x = transects, y = mse)) +
@@ -348,7 +355,17 @@ summary(bc_mod$trafo_mod)
 ```
 
 ```{r figure03}
-plot_coefs(bc_mod$trafo_mod, colors = 'black', scale = TRUE) +
+p3a <- ggplot(DF, aes(x = transects, y = mse)) +
+  geom_point() +
+  facet_grid(quadrats~points) +
+  theme(panel.grid.major = element_line(colour='gray90'),
+        plot.title = element_text(size = 14, 
+                                  face = "plain")) +
+  ggtitle('Points per quadrat') +
+  ylab('Multivariate standard error') +
+  xlab('Transects')
+
+p3b <- plot_coefs(bc_mod$trafo_mod, colors = 'black', scale = TRUE) +
   theme_nice() +
   geom_rect(xmin = -Inf, xmax = Inf, ymin = 0.6, ymax = 1.4,   
             fill = "gray", alpha = 0.05) +
@@ -357,6 +374,10 @@ plot_coefs(bc_mod$trafo_mod, colors = 'black', scale = TRUE) +
   geom_rect(xmin = -Inf, xmax = Inf, ymin = 4.6, ymax = 7.4,  
             fill = "gray", alpha = 0.05) +
   labs(y = 'Term')
+
+
+
+plot_grid(p3a, p3b)
 #ggsave('analysis/figures/fig03.svg')
 ```
 
@@ -419,95 +440,196 @@ coral_centroids <- coral_subset$centroids %>%
   rownames_to_column('Site')
 ```
 
-## both pco
+## Supplementary: both pco
 
 ```{r}
 p1 <- ggplot(coral_centroids, aes(x = PCoA1, y = PCoA2, 
-                                  label = Site, color = Site)) +
+                                  label = Site, 
+                                  color = Site)) +
   geom_point() +
-  geom_label_repel(aes(label = Site), point.padding = 2) +
-  ylim(-0.7, 0.7) +
-  xlim(-0.7, 0.7) +
+  #geom_label_repel(aes(label = Site), point.padding = 2) +
+  ylim(-0.65, 0.65) +
+  xlim(-0.65, 0.65) +
   ggtitle('15q, 4t') +
   theme(legend.position = 'none') +
   stat_ellipse(data = subset(coral_vectors, Site %in% c('Salinas')), 
                alpha = 0.3,
-               level = 0.68) +
+               level = 0.68,
+               size = 1) +
   stat_ellipse(data = subset(coral_vectors, Site %in% c('Charagato')), 
                alpha = 0.3,
-               level = 0.68) +
+               level = 0.68,
+               size = 1) +
   stat_ellipse(data = subset(coral_vectors, Site %in% c('Punta Conejo')), 
                alpha = 0.3,
-               level = 0.68) +
+               level = 0.68,
+               size = 1) +
   stat_ellipse(data = subset(coral_vectors, Site %in% c('Cienaga oeste')), 
                alpha = 0.3,
-               level = 0.68) +
+               level = 0.68,
+               size = 1) +
   stat_ellipse(data = subset(coral_vectors, Site %in% c('Punta Cruz')), 
                alpha = 0.3,
-               level = 0.68) +
+               level = 0.68,
+               size = 1) +
   stat_ellipse(data = subset(coral_vectors, Site %in% c('Guabinitas')), 
                alpha = 0.3,
-               level = 0.68) +
+               level = 0.68,
+               size = 1) +
   stat_ellipse(data = subset(coral_vectors, Site %in% c('Madrisqui')), 
                alpha = 0.3,
-               level = 0.68) +
+               level = 0.68,
+               size = 1) +
   stat_ellipse(data = subset(coral_vectors, Site %in% c('Mero')), 
                alpha = 0.3,
-               level = 0.68) +
+               level = 0.68,
+               size = 1) +
     stat_ellipse(data = subset(coral_vectors, Site %in% c('Punta de Media Legua')), 
                alpha = 0.3,
-               level = 0.68) +
+               level = 0.68,
+               size = 1) +
     stat_ellipse(data = subset(coral_vectors, Site %in% c('Salinas')), 
                alpha = 0.3,
-               level = 0.68) +
+               level = 0.68,
+               size = 1) +
   stat_ellipse(data = subset(coral_vectors, Site %in% c('Dos Mosquises Sur')), 
                alpha = 0.3,
-               level = 0.68) +
+               level = 0.68,
+               size = 1) +
   stat_ellipse(data = subset(coral_vectors, Site %in% c('Boca Seca')), 
                alpha = 0.3,
-               level = 0.68) +
+               level = 0.68,
+               size = 1) +
   stat_ellipse(data = subset(coral_vectors, Site %in% c('La Muerta')), 
                alpha = 0.3,
-               level = 0.68)
+               level = 0.68,
+               size = 1) +
+  scale_fill_viridis()
 ```
 
 ```{r}
-p2 <- ggplot(boot_centroids, aes(x = PCoA1, y = -PCoA2, label = Site)) +
+p2 <- ggplot(boot_centroids, aes(x = PCoA1, 
+                                 y = -PCoA2, 
+                                 label = Site,
+                                 color = Site)) +
   geom_point() +
-  geom_label_repel(aes(label = Site), point.padding = 0.5) +
-  ylim(-0.7, 0.7) +
-  xlim(-0.7, 0.7) +
+  #geom_label_repel(aes(label = Site), point.padding = 0.5) +
+  ylim(-0.65, 0.65) +
+  xlim(-0.65, 0.65) +
   ggtitle('10q, 10t') +
+  theme(legend.position = 'none') +
   stat_ellipse(data = subset(boot_vectors, Site %in% c('Salinas')), 
                alpha = 0.3,
-               level = 0.68) +
-    stat_ellipse(data = subset(boot_vectors, Site %in% c('Charagato')), 
+               level = 0.68,
+               size = 1) +
+  stat_ellipse(data = subset(boot_vectors, Site %in% c('Charagato')), 
                alpha = 0.3,
-               level = 0.68) +
-    stat_ellipse(data = subset(boot_vectors, Site %in% c('Punta Conejo')), 
+               level = 0.68,
+               size = 1) +
+  stat_ellipse(data = subset(boot_vectors, Site %in% c('Punta Conejo')), 
                alpha = 0.3,
-               level = 0.68) +
-    stat_ellipse(data = subset(boot_vectors, Site %in% c('Cienaga oeste')), 
+               level = 0.68,
+               size = 1) +
+  stat_ellipse(data = subset(boot_vectors, Site %in% c('Cienaga oeste')), 
                alpha = 0.3,
-               level = 0.68)
+               level = 0.68,
+               size = 1) +
+  stat_ellipse(data = subset(boot_vectors, Site %in% c('Punta Cruz')), 
+               alpha = 0.3,
+               level = 0.68,
+               size = 1) +
+  stat_ellipse(data = subset(boot_vectors, Site %in% c('Guabinitas')), 
+               alpha = 0.3,
+               level = 0.68,
+               size = 1) +
+  stat_ellipse(data = subset(boot_vectors, Site %in% c('Madrisqui')), 
+               alpha = 0.3,
+               level = 0.68,
+               size = 1) +
+  stat_ellipse(data = subset(boot_vectors, Site %in% c('Mero')), 
+               alpha = 0.3,
+               level = 0.68,
+               size = 1) +
+    stat_ellipse(data = subset(boot_vectors, Site %in% c('Punta de Media Legua')), 
+               alpha = 0.3,
+               level = 0.68,
+               size = 1) +
+    stat_ellipse(data = subset(boot_vectors, Site %in% c('Salinas')), 
+               alpha = 0.3,
+               level = 0.68,
+               size = 1) +
+  stat_ellipse(data = subset(boot_vectors, Site %in% c('Dos Mosquises Sur')), 
+               alpha = 0.3,
+               level = 0.68,
+               size = 1) +
+  stat_ellipse(data = subset(boot_vectors, Site %in% c('Boca Seca')), 
+               alpha = 0.3,
+               level = 0.68,
+               size = 1) +
+  stat_ellipse(data = subset(boot_vectors, Site %in% c('La Muerta')), 
+               alpha = 0.3,
+               level = 0.68,
+               size = 1)
 ```
 
-```{r}
+```{r supp 01}
 plot_grid(p1,p2)
+
+#ggsave('supplementary/supp01.svg')
 ```
+
+# Final comparison
 
 ```{r}
-ggplot(aes(x = PCoA1, y = PCoA2, label = Site), data = subset(coral_centroids, Site %in% c('Cienaga oeste'))) +
-  geom_point(shape = 2) +
-  geom_text(aes(x = PCoA1, y = PCoA2), data = subset(coral_vectors, Site %in% c('Cienaga oeste'))) +
-  stat_ellipse(data = subset(coral_vectors, Site %in% c('Cienaga oeste')), alpha = 0.3,
-               level = 0.68) +
-  geom_point(aes(x = PCoA1, y = PCoA2), data = subset(boot_vectors, Site %in% c('Cienaga oeste'))) +
-  geom_point(aes(x = PCoA1, y = PCoA2), shape = 2,
-             data = subset(boot_centroids, Site %in% c('Cienaga oeste'))) +
-  stat_ellipse(data = subset(boot_vectors, Site %in% c('Cienaga oeste')), alpha = 0.3,
-               level = 0.68)
+group_DF2 <- boot_DF2 %>% 
+        select(2:6)
+
+mse_subset <- boot_DF2 %>%
+  select(-c(1:6)) %>%
+  select(one_of(as.character(coral_spp[coral_spp$Group.ID %in% c(1:9), "Species.name"]))) %>% 
+  divide_by(375) %>% 
+  multiply_by(100) %>%
+  mutate(dummy = 1) %>%   #add a dummy variable
+  vegdist(method = "bray") %>% 
+  MSEgroup.d(group_DF2$Site) %>% 
+  data.frame() %>% 
+  mutate(sites = rownames(.)) %>% 
+  gather(-sites, key = 'replicate', 
+         value = "MSE") %>% 
+  separate(replicate,
+           into = c('value', 'replicate'), 
+           sep = '[.]') %>% 
+  spread(value, MSE) %>% 
+  filter(replicate != 1) %>% #exclude 1st transect
+  mutate(replicate = as.numeric(replicate),
+         sites =  as.factor(sites),
+         type= 'boot') %>% 
+  filter(replicate == '10') %>% 
+  rename(mse = means)
 ```
 
+## Fig05
+
+```{r fig05}
+field_mse %>% 
+  arrange(desc(mse)) %>% 
+  filter(range %in% head(range, 12)) %>% 
+  mutate(type = 'field') %>% 
+  select(-c(Locality, Transect, InsularCoast, Position, range, prop)) %>% 
+  bind_rows(mse_subset) %>% 
+  ggplot(aes(x = fct_rev(sites), 
+             y = mse,
+             color = type)) + 
+  geom_point(stat = 'identity',
+             position = position_dodge(width = 1)) +
+  geom_errorbar(aes(ymin = lower, ymax = upper), 
+                width= .1,
+                position = position_dodge(width = 1)) +
+  coord_flip() +
+  labs(x = "Sites", y = 'Multivariate standard error') +
+  scale_color_OkabeIto()
+
+#ggsave('analysis/figures/fig05.svg')
+```
 
 
