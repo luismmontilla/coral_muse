@@ -306,8 +306,6 @@ bind_rows(set1, set2) %>%
   scale_color_OkabeIto()
 ```
 
-
-
 ##  Global
 
 ```{r sites as replicates}
@@ -352,21 +350,30 @@ diagnostics(trafo_lm(mod))
 bc_mod <- trafo_lm(mod)
 
 summary(bc_mod$trafo_mod)
+
+confint(bc_mod$trafo_mod)
 ```
 
-```{r figure03}
+## Fig 03
+
+```{r figure03a}
 p3a <- ggplot(DF, aes(x = transects, y = mse)) +
-  geom_point() +
+  geom_point(alpha = .2, position = 'jitter') +
   facet_grid(quadrats~points) +
   theme(panel.grid.major = element_line(colour='gray90'),
         plot.title = element_text(size = 14, 
                                   face = "plain")) +
   ggtitle('Points per quadrat') +
   ylab('Multivariate standard error') +
-  xlab('Transects')
+  xlab('Transects') +
+  theme(strip.background = element_rect(fill = 'lightgray'))
 
+#ggsave('analysis/figures/fig03.svg')
+```
+
+```{r figure03b}
 p3b <- plot_coefs(bc_mod$trafo_mod, colors = 'black', scale = TRUE) +
-  theme_nice() +
+  theme(axis.text.y = element_text(color = 'black')) +
   geom_rect(xmin = -Inf, xmax = Inf, ymin = 0.6, ymax = 1.4,   
             fill = "gray", alpha = 0.05) +
   geom_rect(xmin = -Inf, xmax = Inf, ymin = 1.6, ymax = 4.4,   
@@ -375,11 +382,23 @@ p3b <- plot_coefs(bc_mod$trafo_mod, colors = 'black', scale = TRUE) +
             fill = "gray", alpha = 0.05) +
   labs(y = 'Term')
 
-
-
-plot_grid(p3a, p3b)
-#ggsave('analysis/figures/fig03.svg')
+#ggsave('analysis/figures/fig04.svg')
 ```
+
+```{r}
+data.frame(bc_mod$trafo_mod["coefficients"]) %>% 
+  rownames_to_column('name') %>% 
+  ggplot(aes(x = name, y = coefficients)) +
+  geom_point() +
+  coord_flip()
+
+```
+
+
+```{r}
+plot_grid(p3a, p3b)
+```
+
 
 # New configuration
 
