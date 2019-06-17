@@ -111,6 +111,7 @@ ggplot(field_mse, aes(x = fct_rev(sites),
              alpha=0.25,
              size = 2) +
   labs(x = "Sites", y = 'Multivariate standard error') +
+  theme(axis.text=element_text(size=10)) +
   scale_color_OkabeIto()
 
   #ggsave('analysis/figures/fig01.svg')
