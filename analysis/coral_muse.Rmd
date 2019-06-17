@@ -102,8 +102,8 @@ field_mse$sites <- factor(field_mse$sites,
 ```{r fig01}
 ggplot(field_mse, aes(x = fct_rev(sites), 
                       y = mse, 
-                      fill = Locality)) + 
-  geom_bar(stat = 'identity') +
+                      color = Locality)) + 
+  geom_point(stat = 'identity') +
   geom_errorbar(aes(ymin = lower, ymax = upper), 
                 width= .1) +
   coord_flip() +
@@ -111,7 +111,7 @@ ggplot(field_mse, aes(x = fct_rev(sites),
              alpha=0.25,
              size = 2) +
   labs(x = "Sites", y = 'Multivariate standard error') +
-  scale_fill_OkabeIto()
+  scale_color_OkabeIto()
 
   #ggsave('analysis/figures/fig01.svg')
 ```
@@ -357,7 +357,7 @@ confint(bc_mod$trafo_mod)
 ## Fig 03
 
 ```{r figure03a}
-p3a <- ggplot(DF, aes(x = transects, y = mse)) +
+ggplot(DF, aes(x = transects, y = mse)) +
   geom_point(alpha = .2, position = 'jitter') +
   facet_grid(quadrats~points) +
   theme(panel.grid.major = element_line(colour='gray90'),
@@ -371,34 +371,57 @@ p3a <- ggplot(DF, aes(x = transects, y = mse)) +
 #ggsave('analysis/figures/fig03.svg')
 ```
 
-```{r figure03b}
-p3b <- plot_coefs(bc_mod$trafo_mod, colors = 'black', scale = TRUE) +
-  theme(axis.text.y = element_text(color = 'black')) +
-  geom_rect(xmin = -Inf, xmax = Inf, ymin = 0.6, ymax = 1.4,   
-            fill = "gray", alpha = 0.05) +
-  geom_rect(xmin = -Inf, xmax = Inf, ymin = 1.6, ymax = 4.4,   
-            fill = "gray", alpha = 0.05) +
-  geom_rect(xmin = -Inf, xmax = Inf, ymin = 4.6, ymax = 7.4,  
-            fill = "gray", alpha = 0.05) +
-  labs(y = 'Term')
+## Fig 04
 
+```{r}
+coeffs <- bc_mod$trafo_mod %>% 
+  summary() %>% 
+  extract('coefficients') %>% 
+  data.frame() %>% 
+  select(1, 4) %>% 
+  rownames_to_column('source') %>%
+  rename(coeff = coefficients.Estimate,
+         p = coefficients.Pr...t..) %>% 
+  bind_cols(confint(bc_mod$trafo_mod) %>% 
+              data.frame() %>% 
+              rownames_to_column('source')) %>% 
+  slice(-1) %>% 
+  rename(lower = X2.5.., upper = X97.5..) %>% 
+  select(-c(source1)) %>% 
+  mutate(source = factor(source,
+                      levels = c("points",
+                                 "quadrats",
+                                 "transects",
+                                 "points:quadrats",
+                                 "points:transects",
+                                 "quadrats:transects",
+                                 "points:quadrats:transects")))
+```
+
+
+```{r}
+ggplot(coeffs, aes(x = fct_rev(source), y = coeff)) +
+  geom_point(size = 2) +
+   geom_errorbar(aes(ymin = lower, ymax = upper), 
+                width= .1) +
+  geom_hline(yintercept = 0,
+             linetype = 3) +
+  geom_rect(xmin = 4.75, xmax = 7.25, ymin = -Inf, ymax = Inf,   
+            fill = "gray", alpha = 0.05) +
+  geom_rect(xmin = 1.75, xmax = 4.25, ymin = -Inf, ymax = Inf,   
+            fill = "gray", alpha = 0.05) +
+  geom_rect(xmin = 0.75, xmax = 1.25, ymin = -Inf, ymax = Inf,   
+            fill = "gray", alpha = 0.05) +
+  coord_flip() +
+  labs(x = 'Term',
+       y = 'Estimate') +
+  ylim(-0.3, 0.3) +
+  annotate("text", 
+           label = paste("p =", rev(scientific(coeffs$p))),
+            x = c(1:7), y = 0.2)
+  
 #ggsave('analysis/figures/fig04.svg')
 ```
-
-```{r}
-data.frame(bc_mod$trafo_mod["coefficients"]) %>% 
-  rownames_to_column('name') %>% 
-  ggplot(aes(x = name, y = coefficients)) +
-  geom_point() +
-  coord_flip()
-
-```
-
-
-```{r}
-plot_grid(p3a, p3b)
-```
-
 
 # New configuration
 
