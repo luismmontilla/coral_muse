@@ -114,7 +114,7 @@ ggplot(field_mse, aes(x = fct_rev(sites),
   theme(axis.text=element_text(size=10)) +
   scale_color_OkabeIto()
 
-  #ggsave('analysis/figures/fig01.svg')
+#ggsave('analysis/figures/fig01.svg')
 ```
 
 ### Richness
@@ -669,8 +669,10 @@ field_mse %>%
                 width= .1,
                 position = position_dodge(width = 1)) +
   coord_flip() +
-  labs(x = "Sites", y = 'Multivariate standard error') +
-  scale_color_OkabeIto()
+  labs(x = "Sites", 
+       y = 'Multivariate standard error', 
+       color = '') +
+  scale_color_OkabeIto(labels = c("Bootstrap\ndata", "Original\ndata"))
 
 #ggsave('analysis/figures/fig05.svg')
 ```
