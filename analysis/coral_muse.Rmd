@@ -97,9 +97,9 @@ field_mse$sites <- factor(field_mse$sites,
                            levels = field_mse$sites[order(field_mse$Locality)])
 ```
 
-## Fig 01
+## Fig 02
 
-```{r fig01}
+```{r fig02}
 ggplot(field_mse, aes(x = fct_rev(sites), 
                       y = mse, 
                       color = Locality)) + 
@@ -114,7 +114,7 @@ ggplot(field_mse, aes(x = fct_rev(sites),
   theme(axis.text=element_text(size=10)) +
   scale_color_OkabeIto()
 
-#ggsave('analysis/figures/fig01.svg')
+#ggsave('analysis/figures/fig02.svg')
 ```
 
 ### Richness
@@ -156,9 +156,9 @@ coral_summ <- field_mse[,c('mse', 'sites', 'Locality')] %>%
   left_join(coral_rich)
 ```
 
-## Fig 02
+## Fig 03
 
-```{r fig02}
+```{r fig03}
 p1 <- ggplot(coral_summ, aes(x = se,
                              y = mse, 
                              label = sites,
@@ -200,7 +200,7 @@ plot_grid(
   ncol=1, rel_heights=c(.85, .15)
 )
 
-#ggsave('analysis/figures/fig02.svg')
+#ggsave('analysis/figures/fig03.svg')
 ```
 
 Now we choose the set of sites for resampling
@@ -355,7 +355,7 @@ summary(bc_mod$trafo_mod)
 confint(bc_mod$trafo_mod)
 ```
 
-## Fig 03
+## Fig 04
 
 ```{r figure03a}
 ggplot(DF, aes(x = transects, y = mse)) +
@@ -369,10 +369,10 @@ ggplot(DF, aes(x = transects, y = mse)) +
   xlab('Transects') +
   theme(strip.background = element_rect(fill = 'lightgray'))
 
-#ggsave('analysis/figures/fig03.svg')
+#ggsave('analysis/figures/fig04.svg')
 ```
 
-## Fig 04
+## Fig 05
 
 ```{r}
 coeffs <- bc_mod$trafo_mod %>% 
@@ -421,7 +421,7 @@ ggplot(coeffs, aes(x = fct_rev(source), y = coeff)) +
            label = paste("p =", rev(scientific(coeffs$p))),
             x = c(1:7), y = 0.2)
   
-#ggsave('analysis/figures/fig04.svg')
+#ggsave('analysis/figures/fig05.svg')
 ```
 
 # New configuration
@@ -651,9 +651,9 @@ mse_subset <- boot_DF2 %>%
   rename(mse = means)
 ```
 
-## Fig05
+## Fig06
 
-```{r fig05}
+```{r fig06}
 field_mse %>% 
   arrange(desc(mse)) %>% 
   filter(range %in% head(range, 12)) %>% 
@@ -674,7 +674,7 @@ field_mse %>%
        color = '') +
   scale_color_OkabeIto(labels = c("Bootstrap\ndata", "Original\ndata"))
 
-#ggsave('analysis/figures/fig05.svg')
+#ggsave('analysis/figures/fig06.svg')
 ```
 
 
