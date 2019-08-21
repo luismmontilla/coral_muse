@@ -107,11 +107,17 @@ ggplot(field_mse, aes(x = fct_rev(sites),
   geom_errorbar(aes(ymin = lower, ymax = upper), 
                 width= .1) +
   coord_flip() +
-  geom_hline(yintercept = mean(field_mse$mse),
-             alpha=0.25,
-             size = 2) +
+  geom_hline(yintercept = mean(field_mse$mse)) +
+  geom_rect(xmin = -Inf,
+            xmax = Inf,
+            ymin = mean(field_mse$mse)-mean(field_mse$mse)/sqrt(length(field_mse$mse)),
+            ymax = mean(field_mse$mse)+mean(field_mse$mse)/sqrt(length(field_mse$mse)),
+            alpha = 0.02,
+            fill = 'grey',
+            color = NA) +
   labs(x = "Sites", y = 'Multivariate standard error') +
   theme(axis.text=element_text(size=10)) +
+  guides(fill = FALSE) +
   scale_color_OkabeIto()
 
 #ggsave('analysis/figures/fig02.svg')
