@@ -120,7 +120,7 @@ ggplot(field_mse, aes(x = fct_rev(sites),
   guides(fill = FALSE) +
   scale_color_OkabeIto()
 
-#ggsave('analysis/figures/fig02.svg')
+#ggsave('analysis/figures/fig02.svg', width = 6, height = 6)
 ```
 
 ### Richness
