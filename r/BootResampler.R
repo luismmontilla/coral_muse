@@ -9,6 +9,7 @@ BootResampler <- function(DataFrame, nbTransects = 10, nbQuadrats = 15, nbPoints
   Especies <- SpMatrix_Path
   
   BootDF <- DataFrame[0, ]
+  BootDF[, 4] <- as.character(BootDF[, 4])
   l = 1
   set.seed(randomseed)
   
@@ -23,6 +24,10 @@ BootResampler <- function(DataFrame, nbTransects = 10, nbQuadrats = 15, nbPoints
     for(j in 1:nbTransects) {
       #if(l >= 3) next()
       transect <- read.csv(paste("data/transects/", bootTransects[j], sep = ""), stringsAsFactors = F)[, 1:9]
+      
+      if(!("Path" %in% names(transect))) {
+        stop(paste("Add header row to file: ", transect[1, 2]))
+      }
       
       for(k in 1:length(unique(transect$spp.ID))) {
         transect[transect$spp.ID == unique(transect$spp.ID)[k], 3] <- as.character(Especies[, 1][Especies$Species.ID %in% unique(transect$spp.ID)[k]])
