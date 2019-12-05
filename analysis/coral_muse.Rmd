@@ -377,9 +377,10 @@ ggplot(DF, aes(x = transects, y = mse)) +
         plot.title = element_text(size = 14, 
                                   face = "plain")) +
   ggtitle('Points per quadrat') +
-  ylab('Multivariate standard error') +
+  ylab('MultSE') +
   xlab('Transects') +
-  theme(strip.background = element_rect(fill = 'lightgray'))
+  theme(strip.background = element_rect(fill = 'lightgray'),
+        plot.title = element_text(hjust = 0.5))
 
 #ggsave('analysis/figures/fig04.svg')
 ```
