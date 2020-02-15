@@ -1,88 +1,134 @@
 Image,Path,spp Name,spp ID,N pts per species,Cov% per species,N pts ALL species,Cov% ALL species,Reference random pts
-DSCN0606.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Pseudopterogorgia sp.,118,49,49,100,100,100
-DSCN0606.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Turf,217,5,5,100,100,100
-DSCN0606.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Dictyota sp.,225,3,3,100,100,100
-DSCN0606.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Sand,274,43,43,100,100,100
-DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Colpophyllia natans,43,5,5,100,100,100
-DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Orbicella faveolata,59,5,5,100,100,100
-DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Porites astreoides,62,2,2,100,100,100
-DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Briareum asbestinum,110,1,1,100,100,100
-DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Eunicea sp.,111,1,1,100,100,100
-DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Plexaura sp.,115,2,2,100,100,100
-DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Pseudoplexaura sp.,117,5,5,100,100,100
-DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Millepora alcicornis,126,8,8,100,100,100
-DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Other (Sponge massive),159,2,2,100,100,100
-DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Other (Sponge encrusting),185,1,1,100,100,100
-DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Cyanobacteria,216,2,2,100,100,100
-DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Turf,217,36,36,100,100,100
-DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Dictyota sp.,225,2,2,100,100,100
-DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Sand,274,22,22,100,100,100
-DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Artifact,278,5,5,100,100,100
-DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Other (Algae),288,1,1,100,100,100
-DSCN0609.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Colpophyllia natans,43,8,8,100,100,100
-DSCN0609.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Orbicella faveolata,59,3,3,100,100,100
-DSCN0609.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Pseudoplexaura sp.,117,39,39,100,100,100
-DSCN0609.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Other (Sponge encrusting),185,4,4,100,100,100
-DSCN0609.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Cyanobacteria,216,1,1,100,100,100
-DSCN0609.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Turf,217,28,28,100,100,100
-DSCN0609.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Dictyota sp.,225,14,14,100,100,100
-DSCN0609.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Sand,274,3,3,100,100,100
-DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Agaricia sp.,38,1,1,100,100,100
-DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Orbicella faveolata,59,9,9,100,100,100
-DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Porites astreoides,62,1,1,100,100,100
-DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Briareum asbestinum,121,11,11,100,100,100
-DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Millepora alcicornis,126,12,12,100,100,100
-DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Callyspongia sp.,137,2,2,100,100,100
-DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Cliona sp.,169,10,10,100,100,100
-DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Other (Sponge encrusting),185,4,4,100,100,100
-DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Cyanobacteria,216,2,2,100,100,100
-DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Turf,217,37,37,100,100,100
-DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Dictyota sp.,225,1,1,100,100,100
-DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Biotic (unknown),262,1,1,100,100,100
-DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Sand,274,9,9,100,100,100
-DSCN0611.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Agaricia agaricites (agaricites),41,1,1,100,100,100
-DSCN0611.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Orbicella faveolata,59,18,18,100,100,100
-DSCN0611.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Other (Scleractinian massive),73,1,1,100,100,100
-DSCN0611.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Cliona sp.,169,1,1,100,100,100
-DSCN0611.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Cyanobacteria,216,14,14,100,100,100
-DSCN0611.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Turf,217,56,56,100,100,100
-DSCN0611.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Dictyota sp.,225,6,6,100,100,100
-DSCN0611.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Other (Algae),288,3,3,100,100,100
-DSCN0612.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Orbicella faveolata,59,12,12,100,100,100
-DSCN0612.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Briareum asbestinum,110,3,3,100,100,100
-DSCN0612.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Other (Sponge encrusting),185,2,2,100,100,100
-DSCN0612.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Cyanobacteria,216,1,1,100,100,100
-DSCN0612.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Turf,217,40,40,100,100,100
-DSCN0612.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Dictyota sp.,225,22,22,100,100,100
-DSCN0612.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Sand,274,20,20,100,100,100
-MICR0240.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Colpophyllia natans,43,54,54,100,100,100
-MICR0240.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Eunicea sp.,111,1,1,100,100,100
-MICR0240.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Briareum asbestinum,121,15,15,100,100,100
-MICR0240.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Turf,217,3,3,100,100,100
-MICR0240.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Sand,274,27,27,100,100,100
-MICR0241.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Colpophyllia natans,43,9,9,100,100,100
-MICR0241.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Pterogorgia sp.,119,10,10,100,100,100
-MICR0241.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Other (Sponge erect),211,11,11,100,100,100
-MICR0241.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Turf,217,19,19,100,100,100
-MICR0241.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Sand,274,51,51,100,100,100
-MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Agaricia agaricites (agaricites),41,2,2,100,100,100
-MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Porites astreoides,62,20,20,100,100,100
-MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Eusmilia fastigata,108,28,28,100,100,100
-MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Eunicea sp.,111,11,11,100,100,100
-MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Plexaura sp.,115,3,3,100,100,100
-MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Briareum asbestinum,121,4,4,100,100,100
-MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Millepora alcicornis,126,1,1,100,100,100
-MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Other (Sponge massive),159,1,1,100,100,100
-MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Other (Sponge erect),211,1,1,100,100,100
-MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Cyanobacteria,216,1,1,100,100,100
-MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Turf,217,27,27,100,100,100
-MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Other (Algae),288,1,1,100,100,100
-MICR0243.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Agaricia agaricites (carinata),36,1,1,100,100,100
-MICR0243.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Orbicella faveolata,59,11,11,100,100,100
-MICR0243.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Pseudoplexaura sp.,117,5,5,100,100,100
-MICR0243.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Briareum asbestinum,121,9,9,100,100,100
-MICR0243.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Other (Sponge massive),159,11,11,100,100,100
-MICR0243.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Cyanobacteria,216,6,6,100,100,100
-MICR0243.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Turf,217,26,26,100,100,100
-MICR0243.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Other (Fleshy algae),242,6,6,100,100,100
-MICR0243.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceánicas\Los Roques\Madrisquí\madrisqui_t3\Bentos\,Sand,274,25,25,100,100,100
+DSCN0606.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Pseudopterogorgia sp.,118,49,49,100,100,100
+DSCN0606.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Turf,217,5,5,100,100,100
+DSCN0606.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Dictyota sp.,225,3,3,100,100,100
+DSCN0606.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Sand,274,43,43,100,100,100
+DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Colpophyllia natans,43,5,5,100,100,100
+DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Orbicella faveolata,59,5,5,100,100,100
+DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Porites astreoides,62,2,2,100,100,100
+DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Briareum asbestinum,110,1,1,100,100,100
+DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Eunicea sp.,111,1,1,100,100,100
+DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Plexaura sp.,115,2,2,100,100,100
+DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Pseudoplexaura sp.,117,5,5,100,100,100
+DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Millepora alcicornis,126,8,8,100,100,100
+DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Sponge massive),159,2,2,100,100,100
+DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Sponge encrusting),185,1,1,100,100,100
+DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Cyanobacteria,216,2,2,100,100,100
+DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Turf,217,36,36,100,100,100
+DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Dictyota sp.,225,2,2,100,100,100
+DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Sand,274,22,22,100,100,100
+DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Artifact,278,5,5,100,100,100
+DSCN0608.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Algae),288,1,1,100,100,100
+DSCN0609.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Colpophyllia natans,43,8,8,100,100,100
+DSCN0609.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Orbicella faveolata,59,3,3,100,100,100
+DSCN0609.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Pseudoplexaura sp.,117,39,39,100,100,100
+DSCN0609.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Sponge encrusting),185,4,4,100,100,100
+DSCN0609.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Cyanobacteria,216,1,1,100,100,100
+DSCN0609.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Turf,217,28,28,100,100,100
+DSCN0609.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Dictyota sp.,225,14,14,100,100,100
+DSCN0609.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Sand,274,3,3,100,100,100
+DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Agaricia sp.,38,1,1,100,100,100
+DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Orbicella faveolata,59,9,9,100,100,100
+DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Porites astreoides,62,1,1,100,100,100
+DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Briareum asbestinum,121,11,11,100,100,100
+DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Millepora alcicornis,126,12,12,100,100,100
+DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Callyspongia sp.,137,2,2,100,100,100
+DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Cliona sp.,169,10,10,100,100,100
+DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Sponge encrusting),185,4,4,100,100,100
+DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Cyanobacteria,216,2,2,100,100,100
+DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Turf,217,37,37,100,100,100
+DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Dictyota sp.,225,1,1,100,100,100
+DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Biotic (unknown),262,1,1,100,100,100
+DSCN0610.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Sand,274,9,9,100,100,100
+DSCN0611.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Agaricia agaricites (agaricites),41,1,1,100,100,100
+DSCN0611.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Orbicella faveolata,59,18,18,100,100,100
+DSCN0611.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Scleractinian massive),73,1,1,100,100,100
+DSCN0611.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Cliona sp.,169,1,1,100,100,100
+DSCN0611.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Cyanobacteria,216,14,14,100,100,100
+DSCN0611.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Turf,217,56,56,100,100,100
+DSCN0611.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Dictyota sp.,225,6,6,100,100,100
+DSCN0611.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Algae),288,3,3,100,100,100
+DSCN0612.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Orbicella faveolata,59,12,12,100,100,100
+DSCN0612.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Briareum asbestinum,110,3,3,100,100,100
+DSCN0612.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Sponge encrusting),185,2,2,100,100,100
+DSCN0612.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Cyanobacteria,216,1,1,100,100,100
+DSCN0612.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Turf,217,40,40,100,100,100
+DSCN0612.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Dictyota sp.,225,22,22,100,100,100
+DSCN0612.JPG,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Sand,274,20,20,100,100,100
+MICR0240.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Colpophyllia natans,43,54,54,100,100,100
+MICR0240.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Eunicea sp.,111,1,1,100,100,100
+MICR0240.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Briareum asbestinum,121,15,15,100,100,100
+MICR0240.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Turf,217,3,3,100,100,100
+MICR0240.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Sand,274,27,27,100,100,100
+MICR0241.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Colpophyllia natans,43,9,9,100,100,100
+MICR0241.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Pterogorgia sp.,119,10,10,100,100,100
+MICR0241.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Sponge erect),211,11,11,100,100,100
+MICR0241.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Turf,217,19,19,100,100,100
+MICR0241.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Sand,274,51,51,100,100,100
+MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Agaricia agaricites (agaricites),41,2,2,100,100,100
+MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Porites astreoides,62,20,20,100,100,100
+MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Eusmilia fastigata,108,28,28,100,100,100
+MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Eunicea sp.,111,11,11,100,100,100
+MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Plexaura sp.,115,3,3,100,100,100
+MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Briareum asbestinum,121,4,4,100,100,100
+MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Millepora alcicornis,126,1,1,100,100,100
+MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Sponge massive),159,1,1,100,100,100
+MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Sponge erect),211,1,1,100,100,100
+MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Cyanobacteria,216,1,1,100,100,100
+MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Turf,217,27,27,100,100,100
+MICR0242.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Algae),288,1,1,100,100,100
+MICR0243.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Agaricia agaricites (carinata),36,1,1,100,100,100
+MICR0243.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Orbicella faveolata,59,11,11,100,100,100
+MICR0243.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Pseudoplexaura sp.,117,5,5,100,100,100
+MICR0243.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Briareum asbestinum,121,9,9,100,100,100
+MICR0243.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Sponge massive),159,11,11,100,100,100
+MICR0243.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Cyanobacteria,216,6,6,100,100,100
+MICR0243.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Turf,217,26,26,100,100,100
+MICR0243.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Fleshy algae),242,6,6,100,100,100
+MICR0243.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Sand,274,25,25,100,100,100
+MICR0244.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Agaricia agaricites (agaricites),41,7,7,100,100,100
+MICR0244.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Orbicella faveolata,59,10,10,100,100,100
+MICR0244.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Porites astreoides,62,1,1,100,100,100
+MICR0244.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Briareum asbestinum,110,2,2,100,100,100
+MICR0244.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Briareum asbestinum,121,2,2,100,100,100
+MICR0244.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Millepora alcicornis,126,2,2,100,100,100
+MICR0244.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Cyanobacteria,216,2,2,100,100,100
+MICR0244.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Turf,217,49,49,100,100,100
+MICR0244.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Sand,274,25,25,100,100,100
+MICR0245.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Agaricia agaricites (agaricites),41,27,27,100,100,100
+MICR0245.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Porites astreoides,62,4,4,100,100,100
+MICR0245.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Millepora alcicornis,126,2,2,100,100,100
+MICR0245.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Callyspongia sp.,137,1,1,100,100,100
+MICR0245.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Sponge massive),159,5,5,100,100,100
+MICR0245.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Cliona sp.,169,1,1,100,100,100
+MICR0245.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Cyanobacteria,216,7,7,100,100,100
+MICR0245.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Turf,217,41,41,100,100,100
+MICR0245.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Fleshy algae),242,10,10,100,100,100
+MICR0245.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Algae),288,2,2,100,100,100
+MICR0246.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Agaricia agaricites (danai),37,7,7,100,100,100
+MICR0246.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Agaricia sp.,38,1,1,100,100,100
+MICR0246.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Porites astreoides,62,2,2,100,100,100
+MICR0246.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Briareum asbestinum,121,3,3,100,100,100
+MICR0246.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Cliona sp.,169,1,1,100,100,100
+MICR0246.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Sponge encrusting),185,2,2,100,100,100
+MICR0246.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Sponge erect),211,1,1,100,100,100
+MICR0246.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Turf,217,79,79,100,100,100
+MICR0246.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Dictyota sp.,225,2,2,100,100,100
+MICR0246.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Sand,274,2,2,100,100,100
+MICR0247.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Agaricia agaricites (agaricites),41,6,6,100,100,100
+MICR0247.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Plexaura sp.,115,1,1,100,100,100
+MICR0247.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Pseudoplexaura sp.,117,8,8,100,100,100
+MICR0247.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Pseudopterogorgia sp.,118,9,9,100,100,100
+MICR0247.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Briareum asbestinum,121,4,4,100,100,100
+MICR0247.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Sponge massive),159,1,1,100,100,100
+MICR0247.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Cliona sp.,169,1,1,100,100,100
+MICR0247.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Sponge encrusting),185,2,2,100,100,100
+MICR0247.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Other (Sponge erect),211,1,1,100,100,100
+MICR0247.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Turf,217,59,59,100,100,100
+MICR0247.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Sand,274,8,8,100,100,100
+MICR0248.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Briareum asbestinum,110,2,2,100,100,100
+MICR0248.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Pseudopterogorgia sp.,118,39,39,100,100,100
+MICR0248.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Briareum asbestinum,121,2,2,100,100,100
+MICR0248.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Turf,217,5,5,100,100,100
+MICR0248.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Dictyota sp.,225,39,39,100,100,100
+MICR0248.jpg,C:\Users\Invitado\Google Drive\USB\Proyectos Arrecifes\Venezuela_100pts\Data\Data cruda\Islas Oceï¿½nicas\Los Roques\Madrisquï¿½\madrisqui_t3\Bentos\,Sand,274,13,13,100,100,100

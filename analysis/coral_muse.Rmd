@@ -1,17 +1,15 @@
 ---
-title: "Coral MuSE"
-author: "LMM, EM, MV, AC, et al"
+title: "Analysis: Transects, quadrats, or points? What is the best combination to get a precise estimation of a coral community?"
+author: "LMM"
 date: "14 de enero de 2019"
 output: 
-  html_document:
-    code_download: TRUE
+  github_document:
+    #code_download: TRUE
+    #code_folding: hide
 editor_options: 
   chunk_output_type: console
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 # Packages
 
@@ -25,11 +23,12 @@ library(colorblindr)
 library(viridis)
 library(ggrepel)
 library(scales)
-source('r/MSEgroup.r')
-source('r/BootResampler.R')
+library(cowplot)
+source('R/MSEgroup.R')
+source('R/BootResampler.R')
 ```
 
-#Other preliminaries
+## Other preliminaries
 
 ```{r}
 if (!dir.exists('analysis/figures')){dir.create('analysis/figures')}
@@ -432,7 +431,8 @@ ggplot(coeffs, aes(x = fct_rev(source), y = coeff)) +
   ylim(-0.3, 0.3) +
   annotate("text", 
            label = paste("p =", rev(scientific(coeffs$p))),
-            x = c(1:7), y = 0.2)
+            x = c(1:7), y = 0.2) +
+  theme_bw()
   
 #ggsave('analysis/figures/fig05.svg')
 ```
