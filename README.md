@@ -19,5 +19,5 @@ Please cite this compendium as:
 ### How to download or install
 
 You can download the compendium as a zip from from this URL:
-</archive/master.zip>
+<https://github.com/luismmontilla/coral_muse/archive/master.zip>
 
