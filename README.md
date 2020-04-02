@@ -1,4 +1,5 @@
-# Transects, quadrats, or points? What is the best combination to get a precise estimation of a coral community?
+# Transects, quadrats, or points? What is the best combination to get a precise estimation of a coral community? [![DOI](https://zenodo.org/badge/184849834.svg)](https://zenodo.org/badge/latestdoi/184849834)
+
 
 This repository contains the data and code for our paper:
 
@@ -8,7 +9,7 @@ This repository contains the data and code for our paper:
 
 Please cite this compendium as:
 
-> Montilla LM, Miyazawa E, Ascanio A, López-Hernández M, Mariño-Briceño G, Rebolledo Z, Rivera A, S. Mancilla D, Verde A, Cróquer A, (2020). *Compendium of R code and data for Transects, quadrats, or points? What is the best combination to get a precise estimation of a coral community?* Online at <https://doi.org/xxx/xxx>
+> Montilla LM, Miyazawa E, Ascanio A, López-Hernández M, Mariño-Briceño G, Rebolledo Z, Rivera A, S. Mancilla D, Verde A, Cróquer A, (2020). *Compendium of R code and data for Transects, quadrats, or points? What is the best combination to get a precise estimation of a coral community?* Online at <https://doi.org/10.5281/zenodo.3737675>
 
 ### How to download
 
